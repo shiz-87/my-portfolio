@@ -1,0 +1,23 @@
+@use "../global" as g;
+
+.c-section-title {
+  text-align: center;
+}
+
+.c-section-title__en {
+  font-family: g.$ff-en;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: 3.2px;
+  display: block;
+}
+
+.c-section-title__ja {
+  display: block;
+  color: g.$color-text-sub;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: 1.12px;
+}

@@ -177,6 +177,28 @@ body {
 	color: #fff;
 }
 
+.c-section-title {
+	text-align: center;
+}
+
+.c-section-title__en {
+	display: block;
+	font-family: "Outfit", sans-serif;
+	font-size: 40px;
+	font-weight: 700;
+	letter-spacing: 3.2px;
+	line-height: 1;
+}
+
+.c-section-title__ja {
+	color: #666666;
+	display: block;
+	font-size: 14px;
+	font-weight: 400;
+	letter-spacing: 1.12px;
+	line-height: 1;
+}
+
 .p-header-nav {
 	display: none;
 }
@@ -309,6 +331,63 @@ body {
 	width: 100%;
 }
 
+.p-about {
+	padding-block: 64px;
+}
+
+.p-about__inner {
+	padding-inline: 20px;
+}
+
+.p-about__content {
+	margin-top: 40px;
+}
+
+.p-about__image {
+	text-align: center;
+}
+
+.p-about__image img {
+	max-width: 400px;
+	width: 100%;
+}
+
+.p-about__name-en {
+	color: #666;
+	font-family: "Outfit", sans-serif;
+	font-size: 12px;
+	font-weight: 500;
+	letter-spacing: 0.96px;
+	line-height: 1;
+	margin-top: 32px;
+}
+
+.p-about__name-ja {
+	font-size: 24px;
+	font-weight: 700;
+	letter-spacing: 1.92px;
+	line-height: 1;
+	margin-top: 8px;
+}
+
+.p-about__name-ja span {
+	color: #ff4500;
+	font-weight: 700;
+}
+
+.p-about__text {
+	font-size: 14px;
+	font-weight: 400;
+	letter-spacing: 0.56px;
+	line-height: 2;
+	margin-top: 24px;
+}
+
+.p-about__button {
+	margin-top: 48px;
+	text-align: center;
+}
+
 /* ============================================
    Display (表示・非表示)
 ============================================ */
@@ -394,6 +473,48 @@ body {
 
 .p-mv__image img {
 	max-width: 600px;
+}
+
+.p-about__inner {
+	margin-inline: auto;
+	max-width: 1080px;
+	padding-inline: 40px;
+}
+
+.p-about__content {
+	align-items: center;
+	display: flex;
+	justify-content: space-between;
+}
+
+.p-about__image {
+	width: 37.037037037%;
+}
+
+.p-about__body {
+	width: 55.5555555556%;
+}
+
+.p-about__name-en {
+	font-size: 14px;
+	letter-spacing: 1.12px;
+}
+
+.p-about__name-ja {
+	font-size: 32px;
+	letter-spacing: 2.56px;
+	margin-top: 10px;
+}
+
+.p-about__text {
+	font-size: 16px;
+	letter-spacing: 0.64px;
+	margin-top: 40px;
+}
+
+.p-about__button {
+	margin-top: 64px;
+	text-align: left;
 }
 
 .u-hidden-md {
