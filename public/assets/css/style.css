@@ -197,6 +197,7 @@ body {
 	font-weight: 400;
 	letter-spacing: 1.12px;
 	line-height: 1;
+	margin-top: 8px;
 }
 
 .c-skill-card {
@@ -507,6 +508,17 @@ body {
 	font-size: 24px;
 	letter-spacing: 2.88px;
 	line-height: 1;
+}
+
+.c-section-title__en {
+	font-size: 64px;
+	letter-spacing: 5.12px;
+}
+
+.c-section-title__ja {
+	font-size: 16px;
+	letter-spacing: 1.28px;
+	margin-top: 16px;
 }
 
 .c-skill-card {
