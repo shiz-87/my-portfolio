@@ -1,0 +1,29 @@
+@use "../global" as g;
+
+/* ============================================
+   Display (表示・非表示)
+============================================ */
+/* PCで非表示 */
+
+.u-hidden-md {
+  @include g.mq(md) {
+    display: none;
+  }
+}
+
+/* SPで非表示 */
+.u-hidden-sm {
+  display: none;
+  @include g.mq(md) {
+    display: block;
+  }
+}
+
+/* ============================================
+   State (状態・振る舞い)
+============================================ */
+/* 背景固定（ドロワー展開時など） */
+.u-overflow-hidden {
+  overflow: hidden;
+  height: 100vh;
+}

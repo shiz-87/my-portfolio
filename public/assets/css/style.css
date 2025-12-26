@@ -88,3 +88,229 @@ body {
 	line-height: 2;
 }
 
+.l-header {
+	background: #ffffff;
+	box-shadow: 0 0 8px rgba(0, 0, 0, 0.04);
+	height: 70px;
+	left: 0;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 100;
+}
+
+.l-header__inner {
+	align-items: center;
+	display: flex;
+	height: 100%;
+	justify-content: space-between;
+	padding-inline: 20px;
+}
+
+.l-header__logo a {
+	display: inline-block;
+	font-size: 18px;
+	font-weight: 700;
+	letter-spacing: 2.16px;
+	line-height: 1.2;
+}
+
+.c-hamburger {
+	height: 36px;
+	position: relative;
+	width: 36px;
+	z-index: 60;
+}
+
+.c-hamburger.is-active .c-hamburger__bar:nth-of-type(1) {
+	top: 9px;
+	transform: rotate(-45deg);
+}
+
+.c-hamburger.is-active .c-hamburger__bar:nth-of-type(2) {
+	opacity: 0;
+}
+
+.c-hamburger.is-active .c-hamburger__bar:nth-of-type(3) {
+	top: 9px;
+	transform: rotate(45deg);
+}
+
+.c-hamburger__bar {
+	background: #ff4500;
+	border-radius: 6px;
+	height: 3px;
+	left: 0;
+	margin-top: 7.5px;
+	position: absolute;
+	top: 0;
+	transition: transform 0.4s, opacity 0.4s;
+	width: 100%;
+}
+
+.c-hamburger__bar:nth-of-type(2) {
+	top: 9px;
+}
+
+.c-hamburger__bar:nth-of-type(3) {
+	top: 18px;
+}
+
+.c-button {
+	align-items: center;
+	background: #fff;
+	border: 2px solid currentColor;
+	border-radius: 55px;
+	display: flex;
+	height: 50px;
+	justify-content: center;
+	transition: background 0.3s;
+	width: 240px;
+}
+
+.c-button:hover {
+	background: #ff4500;
+	color: #fff;
+}
+
+.p-header-nav {
+	display: none;
+}
+
+.p-header-nav__list {
+	align-items: center;
+	display: flex;
+	gap: 40px;
+}
+
+.p-header-nav__link {
+	font-family: "Outfit", sans-serif;
+	font-weight: 700;
+	letter-spacing: 1.28px;
+	line-height: 1;
+	padding-block: 8px;
+	position: relative;
+}
+
+.p-header-nav__link::after {
+	background: transparent;
+	border-radius: 8px;
+	bottom: 0;
+	content: "";
+	height: 2px;
+	left: 0;
+	position: absolute;
+	transition: background 0.3s;
+	width: 100%;
+}
+
+.p-header-nav__link:hover::after {
+	background: #ff4500;
+}
+
+.p-header-nav__button {
+	font-family: "Outfit", sans-serif;
+	font-weight: 700;
+	letter-spacing: 1.28px;
+	line-height: 1;
+}
+
+.p-drawer-nav {
+	background: #fff;
+	height: 100%;
+	position: fixed;
+	right: 0;
+	top: 0;
+	transform: translateX(100%);
+	transition: transform 0.7s;
+	width: 320px;
+	z-index: 50;
+}
+
+.p-drawer-nav.is-active {
+	transform: translateX(0);
+}
+
+.p-drawer-nav__list {
+	display: flex;
+	flex-direction: column;
+	gap: 40px;
+	height: 100%;
+	padding: 134px 40px 40px;
+}
+
+.p-drawer-nav__item {
+	text-align: right;
+}
+
+.p-drawer-nav__item--en {
+	display: block;
+	font-family: "Outfit", sans-serif;
+	font-size: 32px;
+	font-weight: 700;
+	letter-spacing: 2.56px;
+	line-height: 1;
+}
+
+.p-drawer-nav__item--ja {
+	color: #888888;
+	display: block;
+	font-size: 12px;
+	font-weight: 400;
+	letter-spacing: 0.96px;
+	line-height: 1;
+	margin-top: 8px;
+}
+
+/* ============================================
+   Display (表示・非表示)
+============================================ */
+
+/* PCで非表示 */
+
+/* SPで非表示 */
+
+.u-hidden-sm {
+	display: none;
+}
+
+/* ============================================
+   State (状態・振る舞い)
+============================================ */
+
+/* 背景固定（ドロワー展開時など） */
+
+.u-overflow-hidden {
+	height: 100vh;
+	overflow: hidden;
+}
+
+@media screen and (min-width: 768px) {
+
+.l-header__inner {
+	margin-inline: auto;
+	max-width: 1280px;
+}
+
+.u-hidden-md {
+	display: none;
+}
+
+.u-hidden-sm {
+	display: block;
+}
+
+}
+
+@media screen and (min-width: 992px) {
+
+.c-hamburger {
+	display: none;
+}
+
+.p-header-nav {
+	display: block;
+}
+
+}
+

@@ -47,7 +47,82 @@
     <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
   <body>
-    <p>Hello, world!</p>
-    <script defer src="../assets/js/script.js"></script>
+    <!-- ヘッダー -->
+    <header class="l-header">
+      <div class="l-header__inner">
+        <h1 class="l-header__logo">
+          <a href="#">
+            SHIZUKA<br class="u-hidden-md" />
+            YAMAMOTO</a
+          >
+        </h1>
+
+        <!-- グローバルナビゲーション -->
+        <nav class="p-header-nav" aria-label="グローバルナビゲーション">
+          <ul class="p-header-nav__list">
+            <li class="p-header-nav__item">
+              <a class="p-header-nav__link" href="#about">ABOUT</a>
+            </li>
+            <li class="p-header-nav__item">
+              <a class="p-header-nav__link" href="#skills">SKILLS</a>
+            </li>
+            <li class="p-header-nav__item">
+              <a class="p-header-nav__link" href="#works">WORKS</a>
+            </li>
+            <li class="p-header-nav__item">
+              <a class="p-header-nav__button c-button" href="#contact"
+                >CONTACT</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <!-- /グローバルナビゲーション -->
+
+        <!-- ハンバーガーメニュー -->
+        <button
+          class="c-hamburger"
+          id="js-hamburger"
+          aria-label="メニュー開閉ボタン"
+        >
+          <span class="c-hamburger__bar"></span>
+          <span class="c-hamburger__bar"></span>
+          <span class="c-hamburger__bar"></span>
+        </button>
+        <!-- /ハンバーガーメニュー -->
+      </div>
+    </header>
+    <!-- /ヘッダー -->
+
+    <!-- ドロワーナビゲーション -->
+    <nav class="p-drawer-nav" aria-label="ドロワーナビゲーション">
+      <ul class="p-drawer-nav__list">
+        <li class="p-drawer-nav__item">
+          <a href="#about">
+            <span class="p-drawer-nav__item--en">ABOUT</span>
+            <span class="p-drawer-nav__item--ja">私について</span>
+          </a>
+        </li>
+        <li class="p-drawer-nav__item">
+          <a href="#skills">
+            <span class="p-drawer-nav__item--en">SKILLS</span>
+            <span class="p-drawer-nav__item--ja">できること</span>
+          </a>
+        </li>
+        <li class="p-drawer-nav__item">
+          <a href="#works">
+            <span class="p-drawer-nav__item--en">WORKS</span>
+            <span class="p-drawer-nav__item--ja">制作実績</span>
+          </a>
+        </li>
+        <li class="p-drawer-nav__item">
+          <a href="#contact">
+            <span class="p-drawer-nav__item--en">CONTACT</span>
+            <span class="p-drawer-nav__item--ja">お問い合わせ</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <!-- /ドロワーナビゲーション -->
+    <script defer src="./assets/js/script.js"></script>
   </body>
 </html>

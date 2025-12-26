@@ -1,0 +1,48 @@
+@use "../global" as g;
+
+.p-drawer-nav {
+  position: fixed;
+  z-index: 50;
+  width: 320px;
+  height: 100%;
+  top: 0;
+  right: 0;
+  transform: translateX(100%);
+  transition: transform 0.7s;
+  background: #fff;
+
+  &.is-active {
+    transform: translateX(0);
+  }
+}
+
+.p-drawer-nav__list {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding: 134px 40px 40px;
+}
+
+.p-drawer-nav__item {
+  text-align: right;
+}
+
+.p-drawer-nav__item--en {
+  display: block;
+  font-family: g.$ff-en;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: 2.56px;
+}
+
+.p-drawer-nav__item--ja {
+  display: block;
+  color: g.$color-text-light;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: 0.96px;
+  margin-top: 8px;
+}

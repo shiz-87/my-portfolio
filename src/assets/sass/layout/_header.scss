@@ -1,0 +1,35 @@
+@use "../global" as g;
+
+.l-header {
+  height: 70px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: g.$color-bg;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.04);
+  z-index: 100;
+}
+
+.l-header__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  padding-inline: 20px;
+
+  @include g.mq(md) {
+    max-width: 1280px;
+    margin-inline: auto;
+  }
+}
+
+.l-header__logo {
+  a {
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: 2.16px;
+  }
+}
