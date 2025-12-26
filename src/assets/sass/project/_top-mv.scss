@@ -1,10 +1,10 @@
 @use "../global" as g;
 
-.p-mv {
+.p-top-mv {
   padding-block: 134px 64px;
 }
 
-.p-mv__inner {
+.p-top-mv__inner {
   padding-inline: 20px;
 
   @include g.mq(md) {
@@ -17,7 +17,7 @@
   }
 }
 
-.p-mv__content {
+.p-top-mv__content {
   text-align: center;
 
   @include g.mq(md) {
@@ -26,7 +26,7 @@
   }
 }
 
-.p-mv__title {
+.p-top-mv__title {
   font-size: 24px;
   font-weight: 700;
   line-height: 1.6;
@@ -42,7 +42,7 @@
   }
 }
 
-.p-mv__text {
+.p-top-mv__text {
   font-size: 14px;
   font-style: normal;
   font-weight: 500;
@@ -62,7 +62,7 @@
   }
 }
 
-.p-mv__button {
+.p-top-mv__button {
   text-align: center;
   margin-top: 40px;
 
@@ -71,7 +71,7 @@
   }
 }
 
-.p-mv__image {
+.p-top-mv__image {
   text-align: center;
   margin-top: 48px;
 

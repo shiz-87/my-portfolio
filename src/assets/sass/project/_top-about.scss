@@ -1,10 +1,10 @@
 @use "../global" as g;
 
-.p-about {
+.p-top-about {
   padding-block: 64px;
 }
 
-.p-about__inner {
+.p-top-about__inner {
   padding-inline: 20px;
 
   @include g.mq(md) {
@@ -14,7 +14,7 @@
   }
 }
 
-.p-about__content {
+.p-top-about__content {
   margin-top: 40px;
 
   @include g.mq(md) {
@@ -24,7 +24,7 @@
   }
 }
 
-.p-about__image {
+.p-top-about__image {
   text-align: center;
 
   @include g.mq(md) {
@@ -37,13 +37,13 @@
   }
 }
 
-.p-about__body {
+.p-top-about__body {
   @include g.mq(md) {
     width: calc(600 / 1080 * 100%);
   }
 }
 
-.p-about__name-en {
+.p-top-about__name-en {
   color: #666;
   font-family: g.$ff-en;
   font-size: 12px;
@@ -58,7 +58,7 @@
   }
 }
 
-.p-about__name-ja {
+.p-top-about__name-ja {
   font-size: 24px;
   font-weight: 700;
   line-height: 1;
@@ -77,7 +77,7 @@
   }
 }
 
-.p-about__text {
+.p-top-about__text {
   font-size: 14px;
   font-weight: 400;
   line-height: 2;
@@ -91,7 +91,7 @@
   }
 }
 
-.p-about__button {
+.p-top-about__button {
   text-align: center;
   margin-top: 48px;
 
