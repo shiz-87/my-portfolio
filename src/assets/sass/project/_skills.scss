@@ -1,0 +1,34 @@
+@use "../global" as g;
+
+.p-skills {
+  padding-block: 64px;
+}
+
+.p-skills__inner {
+  padding-inline: 20px;
+
+  @include g.mq(md) {
+    padding-inline: 40px;
+    max-width: g.$width-inner;
+    margin-inline: auto;
+  }
+}
+
+.p-skills__title {
+}
+
+.p-skills__list {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  margin-top: 40px;
+
+  @include g.mq(md) {
+    flex-direction: row;
+    gap: calc(80 / 1080 * 100%);
+    margin-top: 80px;
+  }
+}
+
+.p-skills__item {
+}

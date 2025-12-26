@@ -199,6 +199,56 @@ body {
 	line-height: 1;
 }
 
+.c-skill-card {
+	background: #fff;
+	border-radius: 16px;
+	box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.08);
+	padding: 40px 24px;
+}
+
+.c-skill-card__header {
+	text-align: center;
+}
+
+.c-skill-card__icon {
+	text-align: center;
+}
+
+.c-skill-card__icon--coding img {
+	width: 61px;
+}
+
+.c-skill-card__icon--wordpress img {
+	width: 49px;
+}
+
+.c-skill-card__title {
+	font-family: "Outfit", sans-serif;
+	font-size: 24px;
+	font-weight: 700;
+	letter-spacing: 1.92px;
+	line-height: 1;
+	margin-top: 12px;
+}
+
+.c-skill-card__subtitle {
+	color: #666;
+	font-family: "Outfit", sans-serif;
+	font-size: 12px;
+	font-weight: 500;
+	letter-spacing: 0.48px;
+	line-height: 1;
+	margin-top: 8px;
+}
+
+.c-skill-card__text {
+	font-size: 14px;
+	font-weight: 400;
+	letter-spacing: 0.56px;
+	line-height: 2;
+	margin-top: 24px;
+}
+
 .p-header-nav {
 	display: none;
 }
@@ -388,6 +438,21 @@ body {
 	text-align: center;
 }
 
+.p-skills {
+	padding-block: 64px;
+}
+
+.p-skills__inner {
+	padding-inline: 20px;
+}
+
+.p-skills__list {
+	display: flex;
+	flex-direction: column;
+	gap: 32px;
+	margin-top: 40px;
+}
+
 /* ============================================
    Display (表示・非表示)
 ============================================ */
@@ -442,6 +507,36 @@ body {
 	font-size: 24px;
 	letter-spacing: 2.88px;
 	line-height: 1;
+}
+
+.c-skill-card {
+	padding: 40px 40px 64px;
+}
+
+.c-skill-card__icon--coding img {
+	width: 80px;
+}
+
+.c-skill-card__icon--wordpress img {
+	width: 64px;
+}
+
+.c-skill-card__title {
+	font-size: 32px;
+	letter-spacing: 1.28px;
+	margin-top: 24px;
+}
+
+.c-skill-card__subtitle {
+	font-size: 16px;
+	letter-spacing: 0.64px;
+	margin-top: 10px;
+}
+
+.c-skill-card__text {
+	font-size: 16px;
+	letter-spacing: 0.64px;
+	margin-top: 32px;
 }
 
 .p-mv__inner {
@@ -515,6 +610,18 @@ body {
 .p-about__button {
 	margin-top: 64px;
 	text-align: left;
+}
+
+.p-skills__inner {
+	margin-inline: auto;
+	max-width: 1080px;
+	padding-inline: 40px;
+}
+
+.p-skills__list {
+	flex-direction: row;
+	gap: 7.4074074074%;
+	margin-top: 80px;
 }
 
 .u-hidden-md {

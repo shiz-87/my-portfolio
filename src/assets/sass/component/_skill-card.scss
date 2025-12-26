@@ -1,0 +1,85 @@
+@use "../global" as g;
+
+.c-skill-card {
+  padding: 40px 24px;
+  border-radius: 16px;
+  background: #fff;
+  box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.08);
+
+  @include g.mq(md) {
+    padding: 40px 40px 64px;
+  }
+}
+
+.c-skill-card__header {
+  text-align: center;
+}
+
+.c-skill-card__icon {
+  text-align: center;
+
+  &--coding {
+    img {
+      width: 61px;
+
+      @include g.mq(md) {
+        width: 80px;
+      }
+    }
+  }
+
+  &--wordpress {
+    img {
+      width: 49px;
+
+      @include g.mq(md) {
+        width: 64px;
+      }
+    }
+  }
+}
+
+.c-skill-card__title {
+  font-family: g.$ff-en;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: 1.92px;
+  margin-top: 12px;
+
+  @include g.mq(md) {
+    font-size: 32px;
+    letter-spacing: 1.28px;
+    margin-top: 24px;
+  }
+}
+
+.c-skill-card__subtitle {
+  color: #666;
+  font-family: g.$ff-en;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1;
+  letter-spacing: 0.48px;
+  margin-top: 8px;
+
+  @include g.mq(md) {
+    font-size: 16px;
+    letter-spacing: 0.64px;
+    margin-top: 10px;
+  }
+}
+
+.c-skill-card__text {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 2;
+  letter-spacing: 0.56px;
+  margin-top: 24px;
+
+  @include g.mq(md) {
+    font-size: 16px;
+    letter-spacing: 0.64px;
+    margin-top: 32px;
+  }
+}
