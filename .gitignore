@@ -1,0 +1,11 @@
+# macOSのシステムファイル
+.DS_Store
+
+# Windowsのシステムファイル
+Thumbs.db
+
+# Node.jsのライブラリ
+node_modules/
+
+# エラーログなど
+*.log

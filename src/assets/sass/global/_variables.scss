@@ -1,0 +1,30 @@
+// サイトの基本設定
+
+// 幅関係の設定----------------------------------
+$width-inner: 1080px;
+$header-height: 70px;
+
+// フォント関係の設定 --------------------------
+$ff-ja: "Noto Sans JP", sans-serif;
+$ff-en: "Helvetica Neue", sans-serif;
+
+// ベース設定
+$font-size-base-sp: 12px;
+$font-size-base-pc: 16px;
+$line-height-base: 1.6;
+$font-weight-base: 400;
+
+// 色関係の設定 -------------------------------
+$color-text: #333333;
+$color-main: #cccccc;
+$color-bg: #ffffff;
+$color-accent: #ff0000;
+
+// ブレイクポイント------------------------------
+$breakpoints: (
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px,
+) !default;

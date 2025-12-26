@@ -1,0 +1,8 @@
+@use "../global" as g;
+
+body {
+  font-family: g.$ff-ja;
+  color: g.$color-text;
+  background-color: g.$color-bg;
+  line-height: g.$line-height-base;
+}
