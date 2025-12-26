@@ -6,19 +6,26 @@ $header-height: 70px;
 
 // フォント関係の設定 --------------------------
 $ff-ja: "Noto Sans JP", sans-serif;
-$ff-en: "Helvetica Neue", sans-serif;
+$ff-en: "Outfit", sans-serif;
 
 // ベース設定
-$font-size-base-sp: 12px;
+$font-size-base-sp: 14px;
 $font-size-base-pc: 16px;
-$line-height-base: 1.6;
+$line-height-base: 2;
 $font-weight-base: 400;
 
 // 色関係の設定 -------------------------------
+// テキストカラー
 $color-text: #333333;
-$color-main: #cccccc;
-$color-bg: #ffffff;
-$color-accent: #ff0000;
+$color-text-sub: #666666;
+$color-text-light: #888888;
+
+// 背景色
+$color-bg: #ffffff; // 基本の背景色
+$color-bg-gray: #f8f8f8; // 背景色（DGray）
+
+// アクセントカラー（ブランドカラー）
+$color-accent: #ff4500;
 
 // ブレイクポイント------------------------------
 $breakpoints: (
