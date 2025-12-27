@@ -295,13 +295,25 @@ body {
 	margin-top: 40px;
 }
 
+.c-work-card__link {
+	display: block;
+}
+
+.c-work-card__link:hover .c-work-card__image img {
+	transform: scale(1.05);
+}
+
 .c-work-card__image {
+	aspect-ratio: 16/9;
 	border-radius: 8px 8px 0 0;
 	overflow: hidden;
 }
 
 .c-work-card__image img {
 	width: 100%;
+	-o-object-fit: cover;
+	object-fit: cover;
+	transition: transform 0.4s ease;
 }
 
 .c-work-card__body {
