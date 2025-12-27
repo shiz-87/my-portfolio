@@ -30,3 +30,22 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 });
+
+// WORKSセクションSwiper
+const topWorksSwiper = new Swiper("#js-top-works-swiper", {
+  loop: true,
+  spaceBetween: 70,
+  speed: 1000,
+
+  // 自動再生の設定
+  autoplay: {
+    delay: 3000, // 3秒ごとにスライド
+    disableOnInteraction: false, // 矢印操作などをしても自動再生を止めない！
+  },
+
+  // ナビゲーション矢印の設定
+  navigation: {
+    nextEl: "#js-top-works-next",
+    prevEl: "#js-top-works-prev",
+  },
+});
