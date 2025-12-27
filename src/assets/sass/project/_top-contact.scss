@@ -1,0 +1,73 @@
+@use "../global/" as g;
+
+.p-top-contact {
+  padding-top: 64px;
+  background: g.$color-accent;
+  color: g.$color-bg;
+  text-align: center;
+
+  @include g.mq(md) {
+    padding-top: 100px;
+  }
+}
+
+.p-top-contact__inner {
+  padding-inline: 20px;
+}
+
+.p-top-contact__title {
+  .c-section-title__en,
+  .c-section-title__ja {
+    color: g.$color-bg;
+  }
+}
+
+.p-top-contact__text {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 2;
+  letter-spacing: 0.56px;
+  margin-top: 40px;
+
+  @include g.mq(md) {
+    font-size: 16px;
+    line-height: 1;
+    letter-spacing: 0.64px;
+    margin-top: 64px;
+  }
+}
+
+.p-top-contact__email {
+  margin-top: 32px;
+
+  @include g.mq(md) {
+    margin-top: 40px;
+  }
+}
+
+.p-top-contact__social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+}
+.p-top-contact__social-item {
+  width: 32px;
+  height: 32px;
+  margin-top: 24px;
+  transition: opacity 0.3s;
+
+  @include g.mq(md) {
+    width: 56px;
+    height: 56px;
+    margin-top: 40px;
+  }
+
+  &:hover {
+    opacity: 0.7;
+  }
+
+  img {
+    vertical-align: bottom;
+  }
+}

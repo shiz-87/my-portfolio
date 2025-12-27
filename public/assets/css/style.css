@@ -319,6 +319,27 @@ body {
 	background: #e8f5e9;
 }
 
+.c-email-link {
+	background: #ffffff;
+	border-radius: 50px;
+	color: #ff4500;
+	display: block;
+	font-family: "Outfit", sans-serif;
+	font-size: 14px;
+	font-weight: 700;
+	letter-spacing: 1.12px;
+	line-height: 1.4;
+	margin-inline: auto;
+	max-width: 300px;
+	padding-block: 10px;
+	transition: opacity 0.3s;
+	width: 100%;
+}
+
+.c-email-link:hover {
+	opacity: 0.7;
+}
+
 .p-header-nav {
 	display: none;
 }
@@ -567,6 +588,56 @@ body {
 	text-align: center;
 }
 
+.p-top-contact {
+	background: #ff4500;
+	color: #ffffff;
+	padding-top: 64px;
+	text-align: center;
+}
+
+.p-top-contact__inner {
+	padding-inline: 20px;
+}
+
+.p-top-contact__title .c-section-title__en,
+.p-top-contact__title .c-section-title__ja {
+	color: #ffffff;
+}
+
+.p-top-contact__text {
+	font-size: 14px;
+	font-weight: 500;
+	letter-spacing: 0.56px;
+	line-height: 2;
+	margin-top: 40px;
+}
+
+.p-top-contact__email {
+	margin-top: 32px;
+}
+
+.p-top-contact__social {
+	align-items: center;
+	display: flex;
+	gap: 24px;
+	justify-content: center;
+}
+
+.p-top-contact__social-item {
+	height: 32px;
+	margin-top: 24px;
+	transition: opacity 0.3s;
+	width: 32px;
+}
+
+.p-top-contact__social-item:hover {
+	opacity: 0.7;
+}
+
+.p-top-contact__social-item img {
+	vertical-align: bottom;
+}
+
 /* ============================================
    Display (表示・非表示)
 ============================================ */
@@ -698,6 +769,14 @@ body {
 	padding: 6px 12px;
 }
 
+.c-email-link {
+	font-size: 24px;
+	letter-spacing: 1.92px;
+	line-height: 1;
+	max-width: 600px;
+	padding-block: 32px;
+}
+
 .p-top-mv__inner {
 	align-items: center;
 	display: flex;
@@ -801,6 +880,27 @@ body {
 
 .p-top-works__button {
 	margin-top: 64px;
+}
+
+.p-top-contact {
+	padding-top: 100px;
+}
+
+.p-top-contact__text {
+	font-size: 16px;
+	letter-spacing: 0.64px;
+	line-height: 1;
+	margin-top: 64px;
+}
+
+.p-top-contact__email {
+	margin-top: 40px;
+}
+
+.p-top-contact__social-item {
+	height: 56px;
+	margin-top: 40px;
+	width: 56px;
 }
 
 .u-hidden-md {
