@@ -8,16 +8,6 @@
   }
 }
 
-.p-top-works__inner {
-  padding-inline: 20px;
-
-  @include g.mq(md) {
-    padding-inline: 40px;
-    max-width: g.$width-inner;
-    margin-inline: auto;
-  }
-}
-
 .p-top-works__title {
 }
 

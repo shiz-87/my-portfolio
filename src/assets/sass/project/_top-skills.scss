@@ -4,16 +4,6 @@
   padding-block: 64px;
 }
 
-.p-top-skills__inner {
-  padding-inline: 20px;
-
-  @include g.mq(md) {
-    padding-inline: 40px;
-    max-width: g.$width-inner;
-    margin-inline: auto;
-  }
-}
-
 .p-top-skills__title {
 }
 

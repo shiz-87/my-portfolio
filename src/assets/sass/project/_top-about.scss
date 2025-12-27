@@ -4,16 +4,6 @@
   padding-block: 64px;
 }
 
-.p-top-about__inner {
-  padding-inline: 20px;
-
-  @include g.mq(md) {
-    padding-inline: 40px;
-    max-width: g.$width-inner;
-    margin-inline: auto;
-  }
-}
-
 .p-top-about__content {
   margin-top: 40px;
 

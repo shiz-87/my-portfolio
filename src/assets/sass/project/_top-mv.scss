@@ -5,15 +5,10 @@
 }
 
 .p-top-mv__inner {
-  padding-inline: 20px;
-
   @include g.mq(md) {
-    padding-inline: 40px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    max-width: g.$width-inner;
-    margin-inline: auto;
   }
 }
 
