@@ -120,6 +120,42 @@ body {
 	line-height: 1.2;
 }
 
+.l-footer {
+	background: #ff4500;
+	color: #ffffff;
+	font-family: "Outfit", sans-serif;
+	padding-block: 64px 24px;
+	text-align: center;
+}
+
+.l-footer__inner {
+	padding-inline: 20px;
+}
+
+.l-footer__list {
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+}
+
+.l-footer__item a {
+	font-size: 14px;
+	font-weight: 700;
+	letter-spacing: 1.12px;
+	line-height: 1;
+}
+
+.l-footer__copyright {
+	margin-top: 40px;
+}
+
+.l-footer__copyright small {
+	font-size: 12px;
+	font-weight: 400;
+	letter-spacing: 0.96px;
+	line-height: 1;
+}
+
 .c-hamburger {
 	height: 36px;
 	position: relative;
@@ -692,6 +728,37 @@ body {
 	font-size: 24px;
 	letter-spacing: 2.88px;
 	line-height: 1;
+}
+
+.l-footer {
+	padding-block: 100px 32px;
+}
+
+.l-footer__inner {
+	margin-inline: auto;
+	max-width: 1080px;
+	padding-inline: 40px;
+}
+
+.l-footer__list {
+	align-items: center;
+	flex-direction: row;
+	gap: 64px;
+	justify-content: center;
+}
+
+.l-footer__item a {
+	font-size: 16px;
+	letter-spacing: 1.28px;
+}
+
+.l-footer__copyright {
+	margin-top: 64px;
+}
+
+.l-footer__copyright small {
+	font-size: 14px;
+	letter-spacing: 1.12px;
 }
 
 .c-section-title__en {
