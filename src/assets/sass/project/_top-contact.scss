@@ -46,7 +46,12 @@
   justify-content: center;
   align-items: center;
   gap: 24px;
+
+  @include g.mq(md) {
+    gap: 48px;
+  }
 }
+
 .p-top-contact__social-item {
   width: 32px;
   height: 32px;

@@ -85,6 +85,14 @@ figure {
 	margin: 0;
 }
 
+/**
+ * メディアクエリの定義
+ */
+
+/**
+ * ホバー時に中央から線が伸びるアニメーション
+ */
+
 body {
 	background-color: #ffffff;
 	color: #333333;
@@ -138,6 +146,28 @@ body {
 	font-weight: 700;
 	letter-spacing: 1.12px;
 	line-height: 1;
+}
+
+.l-footer__item a {
+	display: inline-block;
+	position: relative;
+}
+
+.l-footer__item a::after {
+	background-color: #ffffff;
+	bottom: -8px;
+	content: "";
+	height: 2px;
+	left: 0;
+	position: absolute;
+	transform: scaleX(0);
+	transform-origin: center;
+	transition: transform 0.3s ease;
+	width: 100%;
+}
+
+.l-footer__item a:hover::after {
+	transform: scaleX(1);
 }
 
 .l-footer__copyright {
@@ -956,6 +986,10 @@ body {
 
 .p-top-contact__email {
 	margin-top: 40px;
+}
+
+.p-top-contact__social {
+	gap: 48px;
 }
 
 .p-top-contact__social-item {
