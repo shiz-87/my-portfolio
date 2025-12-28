@@ -445,28 +445,29 @@ body {
 }
 
 .p-header-nav__link {
+	display: inline-block;
 	font-family: "Outfit", sans-serif;
 	font-weight: 700;
 	letter-spacing: 1.28px;
 	line-height: 1;
-	padding-block: 8px;
 	position: relative;
 }
 
 .p-header-nav__link::after {
-	background: transparent;
-	border-radius: 8px;
-	bottom: 0;
+	background-color: #ff4500;
+	bottom: -8px;
 	content: "";
 	height: 2px;
 	left: 0;
 	position: absolute;
-	transition: background 0.3s;
+	transform: scaleX(0);
+	transform-origin: center;
+	transition: transform 0.3s ease;
 	width: 100%;
 }
 
 .p-header-nav__link:hover::after {
-	background: #ff4500;
+	transform: scaleX(1);
 }
 
 .p-header-nav__button {
