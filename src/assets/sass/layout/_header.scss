@@ -14,9 +14,8 @@
   &.is-active {
     background-color: transparent;
     box-shadow: none;
-    z-index: 300; /* ★ここでドロワー(200)より上にする！ */
+    z-index: 300;
 
-    /* ロゴを隠してボタンだけ残す（デザインによる） */
     .l-header__logo {
       opacity: 0;
       visibility: hidden;

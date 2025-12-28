@@ -115,7 +115,7 @@ body {
 .l-header.is-active {
 	background-color: transparent;
 	box-shadow: none;
-	z-index: 300; /* ★ここでドロワー(200)より上にする！ */ /* ロゴを隠してボタンだけ残す（デザインによる） */
+	z-index: 300;
 }
 
 .l-header.is-active .l-header__logo {
@@ -211,7 +211,7 @@ body {
 }
 
 .c-button {
-	background: #fff;
+	background: #ffffff;
 	border: 2px solid currentColor;
 	border-radius: 55px;
 	display: inline-block;
@@ -227,7 +227,7 @@ body {
 
 .c-button:hover {
 	background: #ff4500;
-	color: #fff;
+	color: #ffffff;
 }
 
 .c-section-title {
@@ -286,7 +286,7 @@ body {
 }
 
 .c-skill-card__subtitle {
-	color: #666;
+	color: #666666;
 	font-family: "Outfit", sans-serif;
 	font-size: 12px;
 	font-weight: 500;
@@ -575,7 +575,7 @@ body {
 }
 
 .p-top-about__name-en {
-	color: #666;
+	color: #666666;
 	font-family: "Outfit", sans-serif;
 	font-size: 12px;
 	font-weight: 500;
@@ -1054,7 +1054,6 @@ body {
 }
 
 .p-top-mv__text {
-	color: #333;
 	font-size: 18px;
 	letter-spacing: 0.72px;
 	line-height: 2;

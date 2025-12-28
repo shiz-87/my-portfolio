@@ -3,7 +3,7 @@
 .p-top-contact {
   padding-top: 64px;
   background: g.$color-accent;
-  color: g.$color-bg;
+  color: g.$color-text-white;
   text-align: center;
 
   @include g.mq(md) {
@@ -14,7 +14,7 @@
 .p-top-contact__title {
   .c-section-title__en,
   .c-section-title__ja {
-    color: g.$color-bg;
+    color: g.$color-text-white;
   }
 }
 

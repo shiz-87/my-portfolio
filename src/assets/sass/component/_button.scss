@@ -7,7 +7,7 @@
   padding-block: calc(17px - 2px); // 2pxはボーダー分
   border-radius: 55px;
   border: 2px solid currentColor;
-  background: #fff;
+  background: g.$color-bg;
   font-size: 16px;
   line-height: 1;
   letter-spacing: 1.28px;
@@ -15,7 +15,7 @@
   transition: background 0.3s;
 
   &:hover {
-    color: #fff;
+    color: g.$color-text-white;
     background: g.$color-accent;
   }
 }

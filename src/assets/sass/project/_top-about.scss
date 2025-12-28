@@ -34,7 +34,7 @@
 }
 
 .p-top-about__name-en {
-  color: #666;
+  color: g.$color-text-sub;
   font-family: g.$ff-en;
   font-size: 12px;
   font-weight: 500;
@@ -62,7 +62,7 @@
   }
 
   span {
-    color: #ff4500;
+    color: g.$color-accent;
     font-weight: 700;
   }
 }
