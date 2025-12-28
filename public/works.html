@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <!-- 文字コード UTF-8を指定 -->
+    <meta charset="UTF-8" />
+
+    <!-- レスポンシブ対応 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- サイトのアイコン設定 -->
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
+
+    <!-- 検索にヒットしないようにする -->
+    <meta name="robots" content="noindex" />
+
+    <!-- タイトル & 概要（検索結果や共有時の基礎情報） -->
+    <title>作品一覧 | SHIZUKA YAMAMOTO</title>
+    <meta name="description" content="山本静華の制作実績一覧ページです" />
+
+    <!-- OGP -->
+    <meta property="og:title" content="作品一覧 | SHIZUKA YAMAMOTO" />
+    <meta
+      property="og:description"
+      content="山本静華の制作実績一覧ページです"
+    />
+    <meta property="og:type" content="website" />
+    <!-- 記事ページは article -->
+    <meta property="og:url" content="https://example.com/" />
+    <!-- 絶対URL -->
+    <meta property="og:image" content="https://example.com/ogp/og-image.jpg" />
+    <!-- 絶対URL -->
+    <meta property="og:site_name" content="SHIZUKA YAMAMOTO | PORTFOLIO" />
+    <meta property="og:locale" content="ja_JP" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Outfit:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- スタイルシート -->
+    <link rel="stylesheet" href="./assets/css/lib/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <!-- ヘッダー -->
+    <header class="l-header">
+      <div class="l-header__inner l-inner">
+        <h1 class="l-header__logo">
+          <a href="#">
+            SHIZUKA<br class="u-hidden-md" />
+            YAMAMOTO</a
+          >
+        </h1>
+
+        <!-- グローバルナビゲーション -->
+        <nav class="p-header-nav" aria-label="グローバルナビゲーション">
+          <ul class="p-header-nav__list">
+            <li class="p-header-nav__item">
+              <a class="p-header-nav__link" href="#about">ABOUT</a>
+            </li>
+            <li class="p-header-nav__item">
+              <a class="p-header-nav__link" href="#skills">SKILLS</a>
+            </li>
+            <li class="p-header-nav__item">
+              <a class="p-header-nav__link" href="#works">WORKS</a>
+            </li>
+            <li class="p-header-nav__item">
+              <a class="p-header-nav__button c-button" href="#contact"
+                >CONTACT</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <!-- /グローバルナビゲーション -->
+
+        <!-- ハンバーガーメニュー -->
+        <button
+          class="c-hamburger"
+          id="js-hamburger"
+          aria-label="メニュー開閉ボタン"
+        >
+          <span class="c-hamburger__bar"></span>
+          <span class="c-hamburger__bar"></span>
+          <span class="c-hamburger__bar"></span>
+        </button>
+        <!-- /ハンバーガーメニュー -->
+      </div>
+    </header>
+    <!-- /ヘッダー -->
+
+    <!-- ドロワーナビゲーション -->
+    <nav class="p-drawer-nav" aria-label="ドロワーナビゲーション">
+      <ul class="p-drawer-nav__list">
+        <li class="p-drawer-nav__item">
+          <a class="p-drawer-nav__link" href="#about">
+            <span class="p-drawer-nav__en">ABOUT</span>
+            <span class="p-drawer-nav__ja">私について</span>
+          </a>
+        </li>
+        <li class="p-drawer-nav__item">
+          <a class="p-drawer-nav__link" href="#skills">
+            <span class="p-drawer-nav__en">SKILLS</span>
+            <span class="p-drawer-nav__ja">できること</span>
+          </a>
+        </li>
+        <li class="p-drawer-nav__item">
+          <a class="p-drawer-nav__link" href="#works">
+            <span class="p-drawer-nav__en">WORKS</span>
+            <span class="p-drawer-nav__ja">制作実績</span>
+          </a>
+        </li>
+        <li class="p-drawer-nav__item">
+          <a class="p-drawer-nav__link" href="#contact">
+            <span class="p-drawer-nav__en">CONTACT</span>
+            <span class="p-drawer-nav__ja">お問い合わせ</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <!-- /ドロワーナビゲーション -->
+
+    <main class="l-main">
+      <!-- Contactセクション -->
+      <section id="contact" class="p-contact">
+        <div class="p-contact__inner l-inner">
+          <h2 class="p-contact__title c-section-title">
+            <span class="c-section-title__en">CONTACT</span>
+            <span class="c-section-title__ja">お問い合わせ</span>
+          </h2>
+
+          <p class="p-contact__text">
+            お問い合わせはメール、またはXのDM<br class="u-hidden-md" />
+            にてお願いいたします
+          </p>
+
+          <!-- メールアドレス -->
+          <div class="p-contact__email">
+            <a
+              target="_blank"
+              href="mailto:shizuka.yamamoto87@gmail.com"
+              class="c-email-link"
+            >
+              <span
+                >shizuka.yamamoto87<br class="u-hidden-md" />@gmail.com</span
+              >
+
+              <img
+                src="./assets/img/icon-arrow-up-right.svg"
+                alt=""
+                class="c-email-link__icon"
+                width="24"
+                height="24"
+              />
+            </a>
+          </div>
+
+          <!-- SNSリンク -->
+          <ul class="p-contact__social">
+            <li class="p-contact__social-item">
+              <a
+                href="https://github.com/shiz-87"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  src="./assets/img/icon-github-white.svg.svg"
+                  alt="GitHub"
+                  width="56"
+                  height="56"
+                />
+              </a>
+            </li>
+
+            <li class="p-contact__social-item">
+              <a
+                href="https://x.com/shiz__87"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  src="./assets/img/icon-x-white.svg.svg"
+                  alt="X"
+                  width="56"
+                  height="56"
+                />
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!-- /Contactセクション -->
+    </main>
+
+    <!-- フッター -->
+    <footer id="footer" class="l-footer">
+      <div class="l-footer__inner l-inner">
+        <nav class="p-footer-nav" aria-label="フッターナビゲーション">
+          <ul class="p-footer-nav__list">
+            <li class="p-footer-nav__item">
+              <a class="p-footer-nav__link" href="#">HOME</a>
+            </li>
+            <li class="p-footer-nav__item">
+              <a class="p-footer-nav__link" href="#">ABOUT</a>
+            </li>
+            <li class="p-footer-nav__item">
+              <a class="p-footer-nav__link" href="#">SKILLS</a>
+            </li>
+            <li class="p-footer-nav__item">
+              <a class="p-footer-nav__link" href="#">WORKS</a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="l-footer__copyright">
+          <small>&copy; 2026 Shizuka Yamamoto Portfolio.</small>
+        </div>
+      </div>
+    </footer>
+    <!-- /フッター -->
+
+    <script defer src="./assets/js/lib/swiper-bundle.min.js"></script>
+    <script defer src="./assets/js/script.js"></script>
+  </body>
+</html>
