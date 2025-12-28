@@ -1,6 +1,6 @@
 @use "../global/" as g;
 
-.p-top-contact {
+.p-contact {
   padding-top: 64px;
   background: g.$color-accent;
   color: g.$color-text-white;
@@ -11,14 +11,14 @@
   }
 }
 
-.p-top-contact__title {
+.p-contact__title {
   .c-section-title__en,
   .c-section-title__ja {
     color: g.$color-text-white;
   }
 }
 
-.p-top-contact__text {
+.p-contact__text {
   font-size: 14px;
   font-weight: 500;
   line-height: 2;
@@ -33,7 +33,7 @@
   }
 }
 
-.p-top-contact__email {
+.p-contact__email {
   margin-top: 32px;
 
   @include g.mq(md) {
@@ -41,7 +41,7 @@
   }
 }
 
-.p-top-contact__social {
+.p-contact__social {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -52,7 +52,7 @@
   }
 }
 
-.p-top-contact__social-item {
+.p-contact__social-item {
   width: 32px;
   height: 32px;
   margin-top: 24px;

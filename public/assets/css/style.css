@@ -661,19 +661,19 @@ body {
 	text-align: center;
 }
 
-.p-top-contact {
+.p-contact {
 	background: #ff4500;
 	color: #ffffff;
 	padding-top: 64px;
 	text-align: center;
 }
 
-.p-top-contact__title .c-section-title__en,
-.p-top-contact__title .c-section-title__ja {
+.p-contact__title .c-section-title__en,
+.p-contact__title .c-section-title__ja {
 	color: #ffffff;
 }
 
-.p-top-contact__text {
+.p-contact__text {
 	font-size: 14px;
 	font-weight: 500;
 	letter-spacing: 0.56px;
@@ -681,29 +681,29 @@ body {
 	margin-top: 40px;
 }
 
-.p-top-contact__email {
+.p-contact__email {
 	margin-top: 32px;
 }
 
-.p-top-contact__social {
+.p-contact__social {
 	align-items: center;
 	display: flex;
 	gap: 24px;
 	justify-content: center;
 }
 
-.p-top-contact__social-item {
+.p-contact__social-item {
 	height: 32px;
 	margin-top: 24px;
 	transition: opacity 0.3s;
 	width: 32px;
 }
 
-.p-top-contact__social-item:hover {
+.p-contact__social-item:hover {
 	opacity: 0.7;
 }
 
-.p-top-contact__social-item img {
+.p-contact__social-item img {
 	vertical-align: bottom;
 }
 
@@ -1158,26 +1158,26 @@ body {
 	margin-top: 64px;
 }
 
-.p-top-contact {
+.p-contact {
 	padding-top: 100px;
 }
 
-.p-top-contact__text {
+.p-contact__text {
 	font-size: 16px;
 	letter-spacing: 0.64px;
 	line-height: 1;
 	margin-top: 64px;
 }
 
-.p-top-contact__email {
+.p-contact__email {
 	margin-top: 40px;
 }
 
-.p-top-contact__social {
+.p-contact__social {
 	gap: 48px;
 }
 
-.p-top-contact__social-item {
+.p-contact__social-item {
 	height: 56px;
 	margin-top: 40px;
 	width: 56px;
