@@ -853,6 +853,62 @@ body {
 	line-height: 2;
 }
 
+.p-about-vision {
+	background: url(../img/sp/bg-grid.png) repeat center top;
+	padding-block: 64px;
+}
+
+.p-about-vision__content {
+	background: #fff;
+	margin-top: 40px;
+	padding: 36px 20px 36px 23px;
+}
+
+.p-about-vision__list {
+	border-left: 3px solid #c2c2c2;
+	display: flex;
+	flex-direction: column;
+	gap: 32px;
+	padding-left: 32px;
+}
+
+.p-about-vision__item {
+	position: relative;
+}
+
+.p-about-vision__item::before {
+	background: #ff4500;
+	border-radius: 50%;
+	content: "";
+	height: 16px;
+	left: -42px;
+	position: absolute;
+	top: 10px;
+	width: 16px;
+}
+
+.p-about-vision__year {
+	color: #666666;
+	font-size: 12px;
+	letter-spacing: 0.96px;
+	line-height: 1;
+}
+
+.p-about-vision__term {
+	font-size: 14px;
+	font-weight: 700;
+	letter-spacing: 0.56px;
+	line-height: 1.5;
+	margin-top: 8px;
+}
+
+.p-about-vision__text {
+	font-size: 14px;
+	letter-spacing: 0.56px;
+	line-height: 2;
+	margin-top: 8px;
+}
+
 /* ============================================
    Display (表示・非表示)
 ============================================ */
@@ -1143,6 +1199,16 @@ body {
 	padding-block: 170px 100px;
 }
 
+.p-about-vision {
+	padding-block: 100px;
+}
+
+.p-about-vision__item::before {
+	height: 24px;
+	left: -46px;
+	width: 24px;
+}
+
 .u-hidden-md {
 	display: none;
 }
@@ -1245,6 +1311,43 @@ body {
 .p-about-strength__text {
 	font-size: 16px;
 	letter-spacing: 0.64px;
+}
+
+.p-about-vision__content {
+	margin-top: 80px;
+	padding: 96px 64px 104px 64px;
+}
+
+.p-about-vision__list {
+	gap: 64px;
+}
+
+.p-about-vision__item {
+	display: flex;
+	justify-content: space-between;
+}
+
+.p-about-vision__head {
+	flex-shrink: 0;
+	width: 360px;
+}
+
+.p-about-vision__year {
+	font-size: 14px;
+	letter-spacing: 1.12px;
+}
+
+.p-about-vision__term {
+	font-size: 24px;
+	letter-spacing: 0.96px;
+	line-height: 1;
+	margin-top: 16px;
+}
+
+.p-about-vision__text {
+	font-size: 16px;
+	letter-spacing: 0.64px;
+	width: 46.2962962963%;
 }
 
 }

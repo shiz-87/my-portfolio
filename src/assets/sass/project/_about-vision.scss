@@ -1,0 +1,105 @@
+@use "../global/" as g;
+
+.p-about-vision {
+  padding-block: 64px;
+  background: url(../img/sp/bg-grid.png) repeat center top;
+
+  @include g.mq(md) {
+    padding-block: 100px;
+  }
+}
+
+.p-about-vision__content {
+  background: #fff;
+  padding: 36px 20px 36px 23px;
+  margin-top: 40px;
+
+  @include g.mq(lg) {
+    margin-top: 80px;
+    padding: 96px 64px 104px 64px;
+  }
+}
+
+.p-about-vision__list {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  border-left: 3px solid #c2c2c2;
+  padding-left: 32px;
+
+  @include g.mq(lg) {
+    gap: 64px;
+  }
+}
+
+.p-about-vision__item {
+  position: relative;
+
+  @include g.mq(lg) {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: -42px;
+    width: 16px;
+    height: 16px;
+    background: g.$color-accent;
+    border-radius: 50%;
+
+    @include g.mq(md) {
+      width: 24px;
+      height: 24px;
+      left: -46px;
+    }
+  }
+}
+
+.p-about-vision__head {
+  @include g.mq(lg) {
+    width: 360px;
+    flex-shrink: 0;
+  }
+}
+.p-about-vision__year {
+  color: g.$color-text-sub;
+  font-size: 12px;
+  line-height: 1;
+  letter-spacing: 0.96px;
+
+  @include g.mq(lg) {
+    font-size: 14px;
+    letter-spacing: 1.12px;
+  }
+}
+
+.p-about-vision__term {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.5;
+  letter-spacing: 0.56px;
+  margin-top: 8px;
+
+  @include g.mq(lg) {
+    font-size: 24px;
+    line-height: 1;
+    letter-spacing: 0.96px;
+    margin-top: 16px;
+  }
+}
+
+.p-about-vision__text {
+  font-size: 14px;
+  line-height: 2;
+  letter-spacing: 0.56px;
+  margin-top: 8px;
+
+  @include g.mq(lg) {
+    font-size: 16px;
+    letter-spacing: 0.64px;
+    width: calc(500 / 1080 * 100%);
+  }
+}
