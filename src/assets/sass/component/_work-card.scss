@@ -1,12 +1,10 @@
 @use "../global/" as g;
 
 .c-work-card {
-  margin-top: 40px;
   box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.16);
   border-radius: 8px;
 
   @include g.mq(md) {
-    margin-top: 64px;
     max-width: 800px;
     margin-inline: auto;
   }

@@ -48,12 +48,12 @@
     <!-- ヘッダー -->
     <header class="l-header">
       <div class="l-header__inner l-inner">
-        <h1 class="l-header__logo">
+        <div class="l-header__logo">
           <a href="#">
             SHIZUKA<br class="u-hidden-md" />
             YAMAMOTO</a
           >
-        </h1>
+        </div>
 
         <!-- グローバルナビゲーション -->
         <nav class="p-header-nav" aria-label="グローバルナビゲーション">
@@ -123,6 +123,129 @@
     <!-- /ドロワーナビゲーション -->
 
     <main class="l-main">
+      <div class="p-works-archive">
+        <div class="p-works-archive__header">
+          <div class="l-inner">
+            <h1 class="p-works-archive__title">作品一覧</h1>
+
+            <!-- パンくずリスト -->
+            <nav class="c-breadcrumb" aria-label="パンくずリスト">
+              <ul class="c-breadcrumb__list">
+                <li class="c-breadcrumb__item">
+                  <a href="#" class="c-breadcrumb__link">HOME</a>
+                </li>
+                <li class="c-breadcrumb__item" aria-current="page">作品一覧</li>
+              </ul>
+            </nav>
+            <!-- /パンくずリスト -->
+          </div>
+        </div>
+
+        <div class="p-works-archive__body">
+          <div class="l-inner">
+            <div class="p-works-list">
+              <!-- ポートフォリオサイト -->
+              <article class="c-work-card">
+                <a href="works-detail.html" class="c-work-card__link">
+                  <div class="c-work-card__image">
+                    <img
+                      src="./assets/img/work-dummy01.png"
+                      alt="ポートフォリオサイトのトップページ画像"
+                      width="500"
+                      height="280"
+                    />
+                  </div>
+                  <div class="c-work-card__body">
+                    <div class="c-work-card__tags">
+                      <span class="c-label c-label--category">個人制作</span>
+                      <span class="c-label c-label--role">Design & Coding</span>
+                    </div>
+                    <h2 class="c-work-card__title">ポートフォリオサイト</h2>
+                    <p class="c-work-card__meta">
+                      Coding / HTML, Sass, JS, WordPress
+                    </p>
+                  </div>
+                </a>
+              </article>
+
+              <!-- 尾道サイト -->
+              <article class="c-work-card">
+                <a href="works-detail.html" class="c-work-card__link">
+                  <div class="c-work-card__image">
+                    <img
+                      src="./assets/img/works-onomichi-thumb.webp"
+                      alt="尾道サイトのトップページ画像"
+                      width="500"
+                      height="280"
+                    />
+                  </div>
+                  <div class="c-work-card__body">
+                    <div class="c-work-card__tags">
+                      <span class="c-label c-label--category"
+                        >スクール課題</span
+                      >
+                      <span class="c-label c-label--role">Coding</span>
+                    </div>
+                    <h2 class="c-work-card__title">
+                      #見つけて尾道レトロキャンペーン
+                    </h2>
+                    <p class="c-work-card__meta">Coding / HTML, Sass, JS</p>
+                  </div>
+                </a>
+              </article>
+
+              <!-- OHA! -->
+              <article class="c-work-card">
+                <a href="works-detail.html" class="c-work-card__link">
+                  <div class="c-work-card__image">
+                    <img
+                      src="./assets/img/works-oha-thumb.webp"
+                      alt="OHA!のトップページ画像"
+                      width="500"
+                      height="280"
+                    />
+                  </div>
+                  <div class="c-work-card__body">
+                    <div class="c-work-card__tags">
+                      <span class="c-label c-label--category"
+                        >スクール課題</span
+                      >
+                      <span class="c-label c-label--role">Coding</span>
+                    </div>
+                    <h2 class="c-work-card__title">通話アプリOHA!</h2>
+                    <p class="c-work-card__meta">Coding / HTML, Sass, JS</p>
+                  </div>
+                </a>
+              </article>
+
+              <!-- sobolon -->
+              <article class="c-work-card">
+                <a href="works-detail.html" class="c-work-card__link">
+                  <div class="c-work-card__image">
+                    <img
+                      src="./assets/img/works-sobolon-thumb.webp"
+                      alt="sobolonのトップページ画像"
+                      width="500"
+                      height="280"
+                    />
+                  </div>
+                  <div class="c-work-card__body">
+                    <div class="c-work-card__tags">
+                      <span class="c-label c-label--category"
+                        >スクール課題</span
+                      >
+                      <span class="c-label c-label--role">Coding</span>
+                    </div>
+                    <h2 class="c-work-card__title">sobolon</h2>
+                    <p class="c-work-card__meta">Coding / HTML, Sass, JS</p>
+                  </div>
+                </a>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <!-- Contactセクション -->
       <section id="contact" class="p-contact">
         <div class="p-contact__inner l-inner">
@@ -166,7 +289,7 @@
                 rel="noopener noreferrer"
               >
                 <img
-                  src="./assets/img/icon-github-white.svg.svg"
+                  src="./assets/img/icon-github-white.svg"
                   alt="GitHub"
                   width="56"
                   height="56"
@@ -181,7 +304,7 @@
                 rel="noopener noreferrer"
               >
                 <img
-                  src="./assets/img/icon-x-white.svg.svg"
+                  src="./assets/img/icon-x-white.svg"
                   alt="X"
                   width="56"
                   height="56"

@@ -1,0 +1,39 @@
+@use "../global/" as g;
+
+.p-works-archive {
+  padding-block: g.$header-height 64px;
+
+  @include g.mq(md) {
+    padding-bottom: 100px;
+  }
+}
+
+.p-works-archive__header {
+  padding-top: 40px;
+
+  @include g.mq(md) {
+    padding-top: 80px;
+  }
+}
+
+.p-works-archive__title {
+  text-align: center;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: 1.92px;
+  margin-bottom: 40px;
+
+  @include g.mq(md) {
+    font-size: 40px;
+    letter-spacing: 3.2px;
+  }
+}
+
+.p-works-archive__body {
+  margin-top: 64px;
+
+  @include g.mq(md) {
+    margin-top: 100px;
+  }
+}

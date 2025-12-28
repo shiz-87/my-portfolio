@@ -1,0 +1,13 @@
+@use "../global/" as g;
+
+.p-works-list {
+  display: grid;
+  gap: 32px;
+  /* スマホ：1列 */
+  grid-template-columns: 1fr;
+
+  @include g.mq(md) {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 64px 40px;
+  }
+}

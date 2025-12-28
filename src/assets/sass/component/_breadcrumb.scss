@@ -1,0 +1,41 @@
+@use "../global/" as g;
+
+.c-breadcrumb {
+  padding-block: 12px;
+}
+
+.c-breadcrumb__list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.c-breadcrumb__item {
+  display: inline-flex;
+  align-items: center;
+  font-size: 12px;
+  line-height: 1;
+  letter-spacing: 0.48px;
+  color: g.$color-text-sub;
+
+  &:not(:last-child)::after {
+    content: ">";
+    margin-inline: 8px;
+  }
+}
+
+.c-breadcrumb__link {
+  color: g.$color-text-sub;
+  transition: opacity 0.3s;
+
+  &:hover {
+    opacity: 0.7;
+    text-decoration: underline;
+  }
+}
+
+// 現在のページ（クリックできない最後の項目）
+// <li>に直接 aria-current="page" がつく場合や、単なるテキストの場合を想定
+.c-breadcrumb__item[aria-current="page"],
+.c-breadcrumb__item:last-child {
+  pointer-events: none; // クリック不可
+}
