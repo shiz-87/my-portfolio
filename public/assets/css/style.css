@@ -742,6 +742,63 @@ body {
 	transform: scaleX(1);
 }
 
+.p-about-profile {
+	padding-block: 134px 64px;
+}
+
+.p-about-profile__inner {
+	display: flex;
+	flex-direction: column;
+	gap: 32px;
+}
+
+.p-about-profile__image {
+	margin-inline: auto;
+	max-width: 400px;
+}
+
+.p-about-profile__image img {
+	width: 100%;
+}
+
+.p-about-profile__body {
+	width: 100%;
+}
+
+.p-about-profile__en {
+	color: #666666;
+	font-family: "Outfit", sans-serif;
+	font-size: 12px;
+	font-weight: 500;
+	letter-spacing: 0.96px;
+	line-height: 1;
+}
+
+.p-about-profile__ja {
+	font-size: 24px;
+	font-weight: 700;
+	letter-spacing: 1.92px;
+	line-height: 1;
+	margin-top: 8px;
+}
+
+.p-about-profile__ja span {
+	color: #ff4500;
+	font-weight: 700;
+}
+
+.p-about-profile__text {
+	font-size: 14px;
+	font-weight: 400;
+	letter-spacing: 0.56px;
+	line-height: 2;
+	margin-top: 24px;
+}
+
+.p-about-profile__text p:nth-child(n+2) {
+	margin-top: 14px;
+}
+
 /* ============================================
    Display (表示・非表示)
 ============================================ */
@@ -1057,6 +1114,41 @@ body {
 	font-size: 18px;
 	letter-spacing: 0.72px;
 	line-height: 2;
+}
+
+.p-about-profile__inner {
+	align-items: flex-start;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.p-about-profile__image {
+	flex-shrink: 0;
+	max-width: none;
+	width: 37.037037037%;
+}
+
+.p-about-profile__body {
+	width: 55.5555555556%;
+}
+
+.p-about-profile__en {
+	font-size: 14px;
+	letter-spacing: 1.12px;
+}
+
+.p-about-profile__ja {
+	font-size: 32px;
+	letter-spacing: 2.56px;
+}
+
+.p-about-profile__text {
+	font-size: 16px;
+	letter-spacing: 0.64px;
+}
+
+.p-about-profile__text p:nth-child(n+2) {
+	margin-top: 16px;
 }
 
 }
