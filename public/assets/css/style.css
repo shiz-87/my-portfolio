@@ -678,7 +678,7 @@ body {
 	vertical-align: bottom;
 }
 
-.p-footer__list {
+.p-footer-nav__list {
 	display: flex;
 	flex-direction: column;
 	gap: 16px;
@@ -987,7 +987,7 @@ body {
 	width: 56px;
 }
 
-.p-footer__list {
+.p-footer-nav__list {
 	align-items: center;
 	flex-direction: row;
 	gap: 64px;

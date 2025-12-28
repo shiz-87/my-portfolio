@@ -1,9 +1,6 @@
 @use "../global" as g;
 
-.p-footer__nav {
-}
-
-.p-footer__list {
+.p-footer-nav__list {
   display: flex;
   flex-direction: column;
   gap: 16px;
