@@ -135,41 +135,6 @@ body {
 	text-align: center;
 }
 
-.l-footer__list {
-	display: flex;
-	flex-direction: column;
-	gap: 16px;
-}
-
-.l-footer__item a {
-	font-size: 14px;
-	font-weight: 700;
-	letter-spacing: 1.12px;
-	line-height: 1;
-}
-
-.l-footer__item a {
-	display: inline-block;
-	position: relative;
-}
-
-.l-footer__item a::after {
-	background-color: #ffffff;
-	bottom: -8px;
-	content: "";
-	height: 2px;
-	left: 0;
-	position: absolute;
-	transform: scaleX(0);
-	transform-origin: center;
-	transition: transform 0.3s ease;
-	width: 100%;
-}
-
-.l-footer__item a:hover::after {
-	transform: scaleX(1);
-}
-
 .l-footer__copyright {
 	margin-top: 40px;
 }
@@ -713,6 +678,41 @@ body {
 	vertical-align: bottom;
 }
 
+.p-footer__list {
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+}
+
+.p-footer-nav__link {
+	font-size: 14px;
+	font-weight: 700;
+	letter-spacing: 1.12px;
+	line-height: 1;
+}
+
+.p-footer-nav__link {
+	display: inline-block;
+	position: relative;
+}
+
+.p-footer-nav__link::after {
+	background-color: #ffffff;
+	bottom: -8px;
+	content: "";
+	height: 2px;
+	left: 0;
+	position: absolute;
+	transform: scaleX(0);
+	transform-origin: center;
+	transition: transform 0.3s ease;
+	width: 100%;
+}
+
+.p-footer-nav__link:hover::after {
+	transform: scaleX(1);
+}
+
 /* ============================================
    Display (表示・非表示)
 ============================================ */
@@ -771,18 +771,6 @@ body {
 
 .l-footer {
 	padding-block: 100px 32px;
-}
-
-.l-footer__list {
-	align-items: center;
-	flex-direction: row;
-	gap: 64px;
-	justify-content: center;
-}
-
-.l-footer__item a {
-	font-size: 16px;
-	letter-spacing: 1.28px;
 }
 
 .l-footer__copyright {
@@ -997,6 +985,18 @@ body {
 	height: 56px;
 	margin-top: 40px;
 	width: 56px;
+}
+
+.p-footer__list {
+	align-items: center;
+	flex-direction: row;
+	gap: 64px;
+	justify-content: center;
+}
+
+.p-footer-nav__link {
+	font-size: 16px;
+	letter-spacing: 1.28px;
 }
 
 .u-hidden-md {

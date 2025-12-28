@@ -12,38 +12,6 @@
   }
 }
 
-.l-footer__nav {
-}
-
-.l-footer__list {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-
-  @include g.mq(md) {
-    flex-direction: row;
-    gap: 64px;
-    justify-content: center;
-    align-items: center;
-  }
-}
-
-.l-footer__item {
-  a {
-    font-size: 14px;
-    font-weight: 700;
-    line-height: 1;
-    letter-spacing: 1.12px;
-
-    @include g.mq(md) {
-      font-size: 16px;
-      letter-spacing: 1.28px;
-    }
-
-    @include g.hover-line(g.$color-bg);
-  }
-}
-
 .l-footer__copyright {
   margin-top: 40px;
 
