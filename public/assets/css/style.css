@@ -839,7 +839,7 @@ body {
 	width: 20px;
 }
 
-.p-about-strength__title {
+.p-about-strength__term {
 	font-size: 14px;
 	font-weight: 700;
 	letter-spacing: 0.56px;
@@ -1302,7 +1302,7 @@ body {
 	width: 24px;
 }
 
-.p-about-strength__title {
+.p-about-strength__term {
 	font-size: 24px;
 	letter-spacing: 0.96px;
 	line-height: 1;
