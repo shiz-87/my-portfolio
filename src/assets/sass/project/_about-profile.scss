@@ -2,6 +2,10 @@
 
 .p-about-profile {
   padding-block: calc(64px + g.$header-height) 64px;
+
+  @include g.mq(md) {
+    padding-block: calc(100px + g.$header-height) 100px;
+  }
 }
 
 .p-about-profile__inner {
@@ -81,6 +85,7 @@
   @include g.mq(lg) {
     font-size: 16px;
     letter-spacing: 0.64px;
+    margin-top: 32px;
   }
 
   p:nth-child(n + 2) {
