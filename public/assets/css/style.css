@@ -799,6 +799,60 @@ body {
 	margin-top: 14px;
 }
 
+.p-about-strength {
+	padding-block: 64px;
+}
+
+.p-about-strength__card {
+	background: #ffffff;
+	border-radius: 16px;
+	box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.08);
+	margin-top: 40px;
+	padding: 40px 24px;
+}
+
+.p-about-strength__item {
+	border-bottom: 1px solid #eee;
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+	padding-block: 32px;
+}
+
+.p-about-strength__item:first-child {
+	padding-top: 0;
+}
+
+.p-about-strength__item:last-child {
+	border-bottom: none;
+	padding-bottom: 0;
+}
+
+.p-about-strength__head {
+	align-items: center;
+	display: flex;
+	gap: 8px;
+}
+
+.p-about-strength__head img {
+	height: 20px;
+	width: 20px;
+}
+
+.p-about-strength__title {
+	font-size: 14px;
+	font-weight: 700;
+	letter-spacing: 0.56px;
+	line-height: 1.5;
+}
+
+.p-about-strength__text {
+	color: #666666;
+	font-size: 14px;
+	letter-spacing: 0.56px;
+	line-height: 2;
+}
+
 /* ============================================
    Display (表示・非表示)
 ============================================ */
@@ -1154,6 +1208,43 @@ body {
 
 .p-about-profile__text p:nth-child(n+2) {
 	margin-top: 16px;
+}
+
+.p-about-strength {
+	padding-block: 100px;
+}
+
+.p-about-strength__card {
+	margin-top: 80px;
+	padding: 64px;
+}
+
+.p-about-strength__item {
+	align-items: flex-start;
+	flex-direction: row;
+	justify-content: space-between;
+	padding-block: 40px;
+}
+
+.p-about-strength__head {
+	flex-shrink: 0;
+	width: 365px;
+}
+
+.p-about-strength__head img {
+	height: 24px;
+	width: 24px;
+}
+
+.p-about-strength__title {
+	font-size: 24px;
+	letter-spacing: 0.96px;
+	line-height: 1;
+}
+
+.p-about-strength__text {
+	font-size: 16px;
+	letter-spacing: 0.64px;
 }
 
 }
