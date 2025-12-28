@@ -2,6 +2,7 @@ document.addEventListener("DOMContentLoaded", function () {
   // 1. 要素の取得
   const hamburger = document.getElementById("js-hamburger");
   const drawer = document.querySelector(".p-drawer-nav");
+  const header = document.querySelector(".l-header");
   const drawerLinks = drawer.querySelectorAll("a"); // ドロワー内の全リンク
 
   // 2. ハンバーガーボタンをクリックした時の処理
@@ -9,6 +10,7 @@ document.addEventListener("DOMContentLoaded", function () {
     // ボタンとドロワーに is-active クラスを付け外し（トグル）
     hamburger.classList.toggle("is-active");
     drawer.classList.toggle("is-active");
+    header.classList.toggle("is-active");
 
     // アクセシビリティ対応（aria-expandedの更新）
     const isActive = hamburger.classList.contains("is-active");
@@ -23,6 +25,7 @@ document.addEventListener("DOMContentLoaded", function () {
     link.addEventListener("click", () => {
       hamburger.classList.remove("is-active");
       drawer.classList.remove("is-active");
+      header.classList.remove("is-active");
       hamburger.setAttribute("aria-expanded", "false");
 
       // オプション：背景固定解除

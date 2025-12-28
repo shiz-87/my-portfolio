@@ -3,14 +3,18 @@
 .c-hamburger {
   width: 36px;
   height: 36px;
-  position: relative;
-  z-index: 60;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 9999;
 
   @include g.mq(lg) {
     display: none;
   }
 
   &.is-active .c-hamburger__bar {
+    background-color: g.$color-bg;
+
     &:nth-of-type(1) {
       transform: rotate(-45deg);
       top: 9px;

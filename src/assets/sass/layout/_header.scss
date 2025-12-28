@@ -9,6 +9,20 @@
   background: g.$color-bg;
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.04);
   z-index: 100;
+  transition: opacity 0.2s ease;
+
+  &.is-active {
+    background-color: transparent;
+    box-shadow: none;
+    z-index: 300; /* ★ここでドロワー(200)より上にする！ */
+
+    /* ロゴを隠してボタンだけ残す（デザインによる） */
+    .l-header__logo {
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity 0.4s;
+    }
+  }
 }
 
 .l-header__inner {
