@@ -42,7 +42,7 @@
   border-radius: 0 0 8px 8px;
 
   @include g.mq(md) {
-    padding: 40px 40px 24px;
+    padding: 40px 32px 24px;
     min-height: 205px;
   }
 }
@@ -65,9 +65,7 @@
   margin-top: 8px;
 
   @include g.mq(md) {
-    font-size: 32px;
-    font-weight: 700;
-    line-height: 1.5;
+    font-size: 24px;
     letter-spacing: 2.56px;
   }
 }

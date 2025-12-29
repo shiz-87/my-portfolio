@@ -7,6 +7,10 @@
   grid-template-columns: 1fr;
 
   @include g.mq(md) {
+    gap: 48px;
+  }
+
+  @include g.mq(lg) {
     grid-template-columns: repeat(2, 1fr);
     gap: 64px 40px;
   }
