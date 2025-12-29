@@ -1,0 +1,80 @@
+@use "../global/" as g;
+
+.p-work-mv {
+  padding-block: 24px 64px;
+}
+
+.p-work-mv__image {
+  @include g.mq(lg) {
+    width: calc(600 / 1080 * 100%);
+    max-width: 600px;
+    flex-shrink: 0;
+  }
+
+  img {
+    width: 100%;
+  }
+}
+
+.p-work-mv__inner {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+
+  @include g.mq(lg) {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.p-work-mv__content {
+  @include g.mq(lg) {
+    width: calc(400 / 1080 * 100%);
+  }
+}
+
+.p-work-mv__tags {
+  display: flex;
+  gap: 8px;
+
+  @include g.mq(lg) {
+    gap: 12px;
+  }
+}
+
+.p-work-mv__title {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.6;
+  letter-spacing: 0.8px;
+  margin-top: 12px;
+
+  @include g.mq(lg) {
+    font-size: 24px;
+    line-height: 1.5;
+    letter-spacing: 1.28px;
+  }
+}
+
+.p-work-mv__text {
+  font-size: 14px;
+  line-height: 2;
+  letter-spacing: 0.56px;
+  margin-top: 16px;
+
+  @include g.mq(lg) {
+    font-size: 16px;
+    letter-spacing: 0.64px;
+  }
+}
+
+.p-work-mv__button {
+  text-align: center;
+  margin-top: 48px;
+
+  @include g.mq(lg) {
+    text-align: left;
+    margin-top: 64px;
+  }
+}

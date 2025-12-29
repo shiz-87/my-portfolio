@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <!-- 文字コード UTF-8を指定 -->
+    <meta charset="UTF-8" />
+
+    <!-- レスポンシブ対応 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- サイトのアイコン設定 -->
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
+
+    <!-- 検索にヒットしないようにする -->
+    <meta name="robots" content="noindex" />
+
+    <!-- タイトル & 概要（検索結果や共有時の基礎情報） -->
+    <title>#見つけて尾道レトロキャンペーン | SHIZUKA YAMAMOTO</title>
+    <meta name="description" content="山本静華の制作実績詳細ページです" />
+
+    <!-- OGP -->
+    <meta
+      property="og:title"
+      content="#見つけて尾道レトロキャンペーン | SHIZUKA YAMAMOTO"
+    />
+    <meta
+      property="og:description"
+      content="山本静華の制作実績詳細ページです"
+    />
+    <meta property="og:type" content="website" />
+    <!-- 記事ページは article -->
+    <meta property="og:url" content="https://example.com/" />
+    <!-- 絶対URL -->
+    <meta property="og:image" content="https://example.com/ogp/og-image.jpg" />
+    <!-- 絶対URL -->
+    <meta property="og:site_name" content="SHIZUKA YAMAMOTO | PORTFOLIO" />
+    <meta property="og:locale" content="ja_JP" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Outfit:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- スタイルシート -->
+    <link rel="stylesheet" href="./assets/css/lib/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <!-- ヘッダー -->
+    <header class="l-header">
+      <div class="l-header__inner l-inner">
+        <div class="l-header__logo">
+          <a href="#">
+            SHIZUKA<br class="u-hidden-md" />
+            YAMAMOTO</a
+          >
+        </div>
+
+        <!-- グローバルナビゲーション -->
+        <nav class="p-header-nav" aria-label="グローバルナビゲーション">
+          <ul class="p-header-nav__list">
+            <li class="p-header-nav__item">
+              <a class="p-header-nav__link" href="#about">ABOUT</a>
+            </li>
+            <li class="p-header-nav__item">
+              <a class="p-header-nav__link" href="#skills">SKILLS</a>
+            </li>
+            <li class="p-header-nav__item">
+              <a class="p-header-nav__link" href="#works">WORKS</a>
+            </li>
+            <li class="p-header-nav__item">
+              <a class="p-header-nav__button c-button" href="#contact"
+                >CONTACT</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <!-- /グローバルナビゲーション -->
+
+        <!-- ハンバーガーメニュー -->
+        <button
+          class="c-hamburger"
+          id="js-hamburger"
+          aria-label="メニュー開閉ボタン"
+        >
+          <span class="c-hamburger__bar"></span>
+          <span class="c-hamburger__bar"></span>
+          <span class="c-hamburger__bar"></span>
+        </button>
+        <!-- /ハンバーガーメニュー -->
+      </div>
+    </header>
+    <!-- /ヘッダー -->
+
+    <!-- ドロワーナビゲーション -->
+    <nav class="p-drawer-nav" aria-label="ドロワーナビゲーション">
+      <ul class="p-drawer-nav__list">
+        <li class="p-drawer-nav__item">
+          <a class="p-drawer-nav__link" href="#about">
+            <span class="p-drawer-nav__en">ABOUT</span>
+            <span class="p-drawer-nav__ja">私について</span>
+          </a>
+        </li>
+        <li class="p-drawer-nav__item">
+          <a class="p-drawer-nav__link" href="#skills">
+            <span class="p-drawer-nav__en">SKILLS</span>
+            <span class="p-drawer-nav__ja">できること</span>
+          </a>
+        </li>
+        <li class="p-drawer-nav__item">
+          <a class="p-drawer-nav__link" href="#works">
+            <span class="p-drawer-nav__en">WORKS</span>
+            <span class="p-drawer-nav__ja">制作実績</span>
+          </a>
+        </li>
+        <li class="p-drawer-nav__item">
+          <a class="p-drawer-nav__link" href="#contact">
+            <span class="p-drawer-nav__en">CONTACT</span>
+            <span class="p-drawer-nav__ja">お問い合わせ</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <!-- /ドロワーナビゲーション -->
+
+    <main class="l-main">
+      <article class="p-work-detail">
+        <header class="p-work-detail__header">
+          <div class="l-inner">
+            <h1 class="p-work-detail__title">作品詳細</h1>
+
+            <!-- パンくずリスト -->
+            <nav class="c-breadcrumb" aria-label="パンくずリスト">
+              <ul class="c-breadcrumb__list">
+                <li class="c-breadcrumb__item">
+                  <a href="#" class="c-breadcrumb__link">HOME</a>
+                </li>
+                <li class="c-breadcrumb__item">
+                  <a href="#" class="c-breadcrumb__link">作品一覧</a>
+                </li>
+                <li class="c-breadcrumb__item" aria-current="page">
+                  #見つけて尾道レトロキャンペーン
+                </li>
+              </ul>
+            </nav>
+            <!-- /パンくずリスト -->
+          </div>
+        </header>
+
+        <!-- MVセクション -->
+        <section class="p-work-mv">
+          <div class="p-work-mv__inner l-inner">
+            <figure class="p-work-mv__image">
+              <picture>
+                <source
+                  media="(min-width: 768px)"
+                  srcset="./assets/img/works-onomichi-mv.webp"
+                />
+                <img
+                  src="./assets/img/sp/works-onomichi-mv.webp"
+                  alt="#見つけて尾道レトロキャンペーン"
+                  width="670"
+                  height="456"
+                />
+              </picture>
+            </figure>
+
+            <div class="p-work-mv__content">
+              <div class="p-work-mv__tags">
+                <span class="c-label c-label--category">スクール課題</span>
+                <span class="c-label c-label--role">Coding</span>
+              </div>
+              <h2 class="p-work-mv__title">#見つけて尾道レトロキャンペーン</h2>
+              <p class="p-work-mv__text">
+                スクールの課題として制作した、架空の尾道観光キャンペーンサイトです。レトロで温かみのあるデザインを忠実にコーディング。スマホ・PCなど異なる閲覧環境に合わせ、Swiperやモーダルなど動的な実装にも注力しました。
+              </p>
+              <div class="p-work-mv__button">
+                <a href="#" target="_blank" class="c-button">サイトを見る</a>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- /MVセクション -->
+
+        <!-- OVERVIEWセクション -->
+        <section class="p-work-overview">
+          <div class="p-work-overview__inner l-inner">
+            <div class="c-section-title">
+              <span class="c-section-title__en">OVERVIEW</span>
+              <span class="c-section-title__ja">作品概要</span>
+            </div>
+
+            <div class="p-work-overview__content">
+              <dl class="p-work-overview__list">
+                <div class="p-work-overview__item">
+                  <dt class="p-work-overview__term">ターゲット</dt>
+                  <dd class="p-work-overview__desc">
+                    20〜30代の旅行好きな女性、Instagramユーザー
+                  </dd>
+                </div>
+                <div class="p-work-overview__item">
+                  <dt class="p-work-overview__term">コンセプト</dt>
+                  <dd class="p-work-overview__desc">
+                    「#見つけて尾道レトロ」SNS連動型観光キャンペーン
+                  </dd>
+                </div>
+                <div class="p-work-overview__item">
+                  <dt class="p-work-overview__term">担当範囲</dt>
+                  <dd class="p-work-overview__desc">
+                    コーディング（レスポンシブ対応含む）
+                  </dd>
+                </div>
+                <div class="p-work-overview__item">
+                  <dt class="p-work-overview__term">制作期間</dt>
+                  <dd class="p-work-overview__desc">コーディング：2週間</dd>
+                </div>
+                <div class="p-work-overview__item">
+                  <dt class="p-work-overview__term">使用ツール</dt>
+                  <dd class="p-work-overview__desc">Figma / VSCode / GitHub</dd>
+                </div>
+                <div class="p-work-overview__item">
+                  <dt class="p-work-overview__term">使用言語</dt>
+                  <dd class="p-work-overview__desc">
+                    HTML / CSS(Sass) /JavaScript (jQuery)
+                  </dd>
+                </div>
+              </dl>
+
+              <div class="p-work-overview__button">
+                <a href="#" target="_blank" class="c-button c-button--github"
+                  ><svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M8.02742 19.3248C8.02742 19.424 7.91613 19.5034 7.77581 19.5034C7.61613 19.5183 7.50484 19.4389 7.50484 19.3248C7.50484 19.2255 7.61613 19.1461 7.75645 19.1461C7.90161 19.1312 8.02742 19.2106 8.02742 19.3248ZM6.52258 19.1014C6.48871 19.2007 6.58548 19.3148 6.73065 19.3446C6.85645 19.3942 7.00161 19.3446 7.03065 19.2454C7.05968 19.1461 6.96774 19.032 6.82258 18.9873C6.69677 18.9526 6.55645 19.0022 6.52258 19.1014ZM8.66129 19.0171C8.52097 19.0518 8.42419 19.1461 8.43871 19.2602C8.45323 19.3595 8.57903 19.424 8.72419 19.3893C8.86452 19.3545 8.96129 19.2602 8.94677 19.161C8.93226 19.0667 8.80161 19.0022 8.66129 19.0171ZM11.8452 0C5.13387 0 0 5.22573 0 12.109C0 17.6126 3.37742 22.3222 8.20161 23.9798C8.82097 24.0939 9.03871 23.7019 9.03871 23.3793C9.03871 23.0716 9.02419 21.3744 9.02419 20.3322C9.02419 20.3322 5.6371 21.0766 4.92581 18.8533C4.92581 18.8533 4.37419 17.4092 3.58065 17.037C3.58065 17.037 2.47258 16.2578 3.65806 16.2727C3.65806 16.2727 4.8629 16.372 5.52581 17.5531C6.58548 19.4687 8.36129 18.9178 9.05323 18.5903C9.16452 17.7963 9.47903 17.2454 9.82742 16.9179C7.12258 16.6102 4.39355 16.2082 4.39355 11.4341C4.39355 10.0693 4.76129 9.38447 5.53548 8.51103C5.40968 8.18846 4.99839 6.85846 5.66129 5.14136C6.67258 4.81878 9 6.48129 9 6.48129C9.96774 6.20338 11.0081 6.05946 12.0387 6.05946C13.0694 6.05946 14.1097 6.20338 15.0774 6.48129C15.0774 6.48129 17.4048 4.81382 18.4161 5.14136C19.079 6.86342 18.6677 8.18846 18.5419 8.51103C19.3161 9.38943 19.7903 10.0743 19.7903 11.4341C19.7903 16.2231 16.9403 16.6052 14.2355 16.9179C14.6806 17.3099 15.0581 18.0543 15.0581 19.2205C15.0581 20.893 15.0435 22.9624 15.0435 23.3694C15.0435 23.6919 15.2661 24.084 15.8806 23.9699C20.7194 22.3222 24 17.6126 24 12.109C24 5.22573 18.5565 0 11.8452 0ZM4.70323 17.1164C4.64032 17.166 4.65484 17.2801 4.7371 17.3744C4.81452 17.4538 4.92581 17.4886 4.98871 17.424C5.05161 17.3744 5.0371 17.2603 4.95484 17.166C4.87742 17.0866 4.76613 17.0518 4.70323 17.1164ZM4.18064 16.7144C4.14677 16.7789 4.19516 16.8583 4.29194 16.9079C4.36935 16.9576 4.46613 16.9427 4.5 16.8732C4.53387 16.8087 4.48548 16.7293 4.38871 16.6796C4.29194 16.6499 4.21452 16.6648 4.18064 16.7144ZM5.74839 18.4811C5.67097 18.5456 5.7 18.6945 5.81129 18.7888C5.92258 18.9029 6.0629 18.9178 6.12581 18.8384C6.18871 18.7739 6.15968 18.625 6.0629 18.5307C5.95645 18.4166 5.81129 18.4017 5.74839 18.4811ZM5.19677 17.7516C5.11935 17.8012 5.11935 17.9302 5.19677 18.0444C5.27419 18.1585 5.40484 18.2082 5.46774 18.1585C5.54516 18.094 5.54516 17.965 5.46774 17.8508C5.4 17.7367 5.27419 17.6871 5.19677 17.7516Z"
+                      fill="#333333"
+                    />
+                  </svg>
+                  コードを見る</a
+                >
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- /OVERVIEWセクション -->
+
+        <!-- POINTセクション -->
+        <section class="p-work-point">
+          <div class="p-work-point__inner l-inner">
+            <div class="c-section-title">
+              <span class="c-section-title__en">POINT</span>
+              <span class="c-section-title__ja">工夫したこと</span>
+            </div>
+
+            <ul class="p-work-point__list">
+              <!-- ポイント1 -->
+              <li class="p-work-point__item">
+                <figure class="p-work-point__image">
+                  <img
+                    src="./assets/img/works-onomichi-point01.webp"
+                    alt=""
+                    width="800"
+                    height="956"
+                  />
+                </figure>
+                <div class="p-work-point__body">
+                  <h3 class="p-work-point__title">
+                    <span class="u-text-accent">01</span>
+                    緻密な計算による装飾配置の再現
+                  </h3>
+                  <p class="p-work-point__text">
+                    ファーストビューや各セクションに散りばめられた多数の装飾画像を、absolute配置とcalc関数を駆使して緻密に配置しました。画面幅の伸縮時にもレイアウトが崩れないよう検証を重ね、デザイナーが意図した賑やかな世界観を、PC・スマホどの環境でも忠実に再現しています。
+                  </p>
+                </div>
+              </li>
+
+              <!-- ポイント2 -->
+              <li class="p-work-point__item">
+                <figure class="p-work-point__image">
+                  <img
+                    src="./assets/img/works-onomichi-point02.webp"
+                    alt=""
+                    width="800"
+                    height="956"
+                  />
+                </figure>
+                <div class="p-work-point__body">
+                  <h3 class="p-work-point__title">
+                    <span class="u-text-accent">02</span>
+                    Sass機能を活用した保守性の高い設計
+                  </h3>
+                  <p class="p-work-point__text">
+                    配色やフォント、ブレイクポイントを変数として別ファイルで一元管理し、仕様変更に即座に対応できる設計を行いました。また、メディアクエリをmixinで定義して記述を統一するなど、チーム開発を想定して「第三者が見ても構造が理解しやすく、修正しやすいコード」を意識しています。
+                  </p>
+                </div>
+              </li>
+
+              <!-- ポイント3 -->
+              <li class="p-work-point__item">
+                <figure class="p-work-point__image">
+                  <img
+                    src="./assets/img/works-onomichi-point03.webp"
+                    alt=""
+                    width="800"
+                    height="956"
+                  />
+                </figure>
+                <div class="p-work-point__body">
+                  <h3 class="p-work-point__title">
+                    <span class="u-text-accent">03</span>
+                    ユーザビリティを考慮した動的実装
+                  </h3>
+                  <p class="p-work-point__text">
+                    スライダーにはSwiperを採用し、デバイス幅に応じて表示枚数やループ挙動を最適化しました。また、モーダルにはHTML標準のdialogタグを採用してセマンティックに実装するなど、ライブラリと標準機能を適材適所で使い分け、パフォーマンスとアクセシビリティの両立を目指しました
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <!-- /POINTセクション -->
+
+        <!-- キャプチャセクション -->
+        <section class="p-work-capture">
+          <div class="l-inner">
+            <p class="p-work-capture__text">▼スクロールして全体を表示する</p>
+            <div class="p-work-capture__frame"></div>
+            <div class="p-work-capture__button">
+              <a href="#" target="_blank" class="c-button">サイト一覧へ戻る</a>
+            </div>
+          </div>
+        </section>
+        <!-- /キャプチャセクション -->
+      </article>
+
+      <!-- Contactセクション -->
+      <section id="contact" class="p-contact">
+        <div class="p-contact__inner l-inner">
+          <h2 class="p-contact__title c-section-title">
+            <span class="c-section-title__en">CONTACT</span>
+            <span class="c-section-title__ja">お問い合わせ</span>
+          </h2>
+
+          <p class="p-contact__text">
+            お問い合わせはメール、またはXのDM<br class="u-hidden-md" />
+            にてお願いいたします
+          </p>
+
+          <!-- メールアドレス -->
+          <div class="p-contact__email">
+            <a
+              target="_blank"
+              href="mailto:shizuka.yamamoto87@gmail.com"
+              class="c-email-link"
+            >
+              <span
+                >shizuka.yamamoto87<br class="u-hidden-md" />@gmail.com</span
+              >
+
+              <img
+                src="./assets/img/icon-arrow-up-right.svg"
+                alt=""
+                class="c-email-link__icon"
+                width="24"
+                height="24"
+              />
+            </a>
+          </div>
+
+          <!-- SNSリンク -->
+          <ul class="p-contact__social">
+            <li class="p-contact__social-item">
+              <a
+                href="https://github.com/shiz-87"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  src="./assets/img/icon-github-white.svg"
+                  alt="GitHub"
+                  width="56"
+                  height="56"
+                />
+              </a>
+            </li>
+
+            <li class="p-contact__social-item">
+              <a
+                href="https://x.com/shiz__87"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  src="./assets/img/icon-x-white.svg"
+                  alt="X"
+                  width="56"
+                  height="56"
+                />
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!-- /Contactセクション -->
+    </main>
+
+    <!-- フッター -->
+    <footer id="footer" class="l-footer">
+      <div class="l-footer__inner l-inner">
+        <nav class="p-footer-nav" aria-label="フッターナビゲーション">
+          <ul class="p-footer-nav__list">
+            <li class="p-footer-nav__item">
+              <a class="p-footer-nav__link" href="#">HOME</a>
+            </li>
+            <li class="p-footer-nav__item">
+              <a class="p-footer-nav__link" href="#">ABOUT</a>
+            </li>
+            <li class="p-footer-nav__item">
+              <a class="p-footer-nav__link" href="#">SKILLS</a>
+            </li>
+            <li class="p-footer-nav__item">
+              <a class="p-footer-nav__link" href="#">WORKS</a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="l-footer__copyright">
+          <small>&copy; 2026 Shizuka Yamamoto Portfolio.</small>
+        </div>
+      </div>
+    </footer>
+    <!-- /フッター -->
+
+    <script defer src="./assets/js/lib/swiper-bundle.min.js"></script>
+    <script defer src="./assets/js/script.js"></script>
+  </body>
+</html>

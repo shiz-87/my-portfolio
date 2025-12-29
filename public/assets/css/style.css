@@ -432,7 +432,7 @@ body {
 	display: inline-flex;
 	font-size: 12px;
 	letter-spacing: 0.48px;
-	line-height: 1;
+	line-height: 1.5;
 }
 
 .c-breadcrumb__item:not(:last-child)::after {
@@ -977,6 +977,58 @@ body {
 	grid-template-columns: 1fr;
 }
 
+.p-work-detail {
+	padding-top: 70px;
+}
+
+.p-work-detail__title {
+	font-size: 24px;
+	font-weight: 700;
+	letter-spacing: 1.92px;
+	line-height: 1;
+	padding-block: 60px;
+	text-align: center;
+}
+
+.p-work-mv {
+	padding-block: 24px 64px;
+}
+
+.p-work-mv__image img {
+	width: 100%;
+}
+
+.p-work-mv__inner {
+	display: flex;
+	flex-direction: column;
+	gap: 24px;
+}
+
+.p-work-mv__tags {
+	display: flex;
+	gap: 8px;
+}
+
+.p-work-mv__title {
+	font-size: 20px;
+	font-weight: 700;
+	letter-spacing: 0.8px;
+	line-height: 1.6;
+	margin-top: 12px;
+}
+
+.p-work-mv__text {
+	font-size: 14px;
+	letter-spacing: 0.56px;
+	line-height: 2;
+	margin-top: 16px;
+}
+
+.p-work-mv__button {
+	margin-top: 48px;
+	text-align: center;
+}
+
 /* ============================================
    Display (表示・非表示)
 ============================================ */
@@ -1443,6 +1495,48 @@ body {
 .p-works-list {
 	gap: 64px 40px;
 	grid-template-columns: repeat(2, 1fr);
+}
+
+.p-work-detail__title {
+	font-size: 40px;
+	letter-spacing: 3.2px;
+	padding-block: 100px;
+}
+
+.p-work-mv__image {
+	flex-shrink: 0;
+	max-width: 600px;
+	width: 55.5555555556%;
+}
+
+.p-work-mv__inner {
+	align-items: center;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.p-work-mv__content {
+	width: 37.037037037%;
+}
+
+.p-work-mv__tags {
+	gap: 12px;
+}
+
+.p-work-mv__title {
+	font-size: 24px;
+	letter-spacing: 1.28px;
+	line-height: 1.5;
+}
+
+.p-work-mv__text {
+	font-size: 16px;
+	letter-spacing: 0.64px;
+}
+
+.p-work-mv__button {
+	margin-top: 64px;
+	text-align: left;
 }
 
 }
