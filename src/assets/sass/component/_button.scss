@@ -17,5 +17,21 @@
   &:hover {
     color: g.$color-text-white;
     background: g.$color-accent;
+
+    svg path {
+      fill: g.$color-text-white;
+    }
+  }
+
+  &--github {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+
+    svg {
+      width: 20px;
+      height: 20px;
+    }
   }
 }

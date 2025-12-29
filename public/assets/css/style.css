@@ -230,6 +230,22 @@ body {
 	color: #ffffff;
 }
 
+.c-button:hover svg path {
+	fill: #ffffff;
+}
+
+.c-button--github {
+	align-items: center;
+	display: inline-flex;
+	gap: 8px;
+	justify-content: center;
+}
+
+.c-button--github svg {
+	height: 20px;
+	width: 20px;
+}
+
 .c-section-title {
 	text-align: center;
 }
@@ -1029,6 +1045,60 @@ body {
 	text-align: center;
 }
 
+.p-work-overview {
+	padding-block: 64px;
+}
+
+.p-work-overview__content {
+	background: #ffffff;
+	border-radius: 16px;
+	box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.08);
+	margin-top: 40px;
+	padding: 32px 20px;
+}
+
+.p-work-overview__item { /* 下に線を引く */
+	border-bottom: 1px solid #eee;
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+	padding-block: 32px;
+}
+
+.p-work-overview__item { /* 最初のアイテム: 上の余白を消す */
+}
+
+.p-work-overview__item:first-child {
+	padding-top: 0;
+}
+
+.p-work-overview__item { /* 最後のアイテム: 線と下の余白を消す */
+}
+
+.p-work-overview__item:last-child {
+	border-bottom: none;
+	padding-bottom: 0;
+}
+
+.p-work-overview__term {
+	font-size: 14px;
+	font-weight: 700;
+	letter-spacing: 0.56px;
+	line-height: 1;
+}
+
+.p-work-overview__desc {
+	color: #666666;
+	font-size: 14px;
+	letter-spacing: 0.56px;
+	line-height: 1.7;
+}
+
+.p-work-overview__button {
+	margin-top: 48px;
+	text-align: center;
+}
+
 /* ============================================
    Display (表示・非表示)
 ============================================ */
@@ -1537,6 +1607,34 @@ body {
 .p-work-mv__button {
 	margin-top: 64px;
 	text-align: left;
+}
+
+.p-work-overview__content {
+	margin-top: 80px;
+	padding: 64px;
+}
+
+.p-work-overview__item {
+	align-items: center;
+	flex-direction: row;
+	gap: 80px;
+}
+
+.p-work-overview__term {
+	flex-shrink: 0;
+	font-size: 20px;
+	letter-spacing: 0.8px;
+	width: 120px;
+}
+
+.p-work-overview__desc {
+	font-size: 16px;
+	letter-spacing: 0.64px;
+	line-height: 2;
+}
+
+.p-work-overview__button {
+	margin-top: 64px;
 }
 
 }
