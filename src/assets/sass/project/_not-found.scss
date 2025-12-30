@@ -1,7 +1,11 @@
 @use "../global/" as g;
 
 .p-not-found {
-  padding-block: g.$header-height 64px;
+  padding-block: g.$header-height 100px;
+
+  @include g.mq(md) {
+    padding-bottom: 200px;
+  }
 }
 
 .p-not-found__content {

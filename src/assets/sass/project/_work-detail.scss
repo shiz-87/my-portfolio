@@ -6,11 +6,11 @@
 
 .p-work-detail__title {
   text-align: center;
-  font-size: 24px;
+  font-size: 32px;
   font-weight: 700;
   line-height: 1;
   letter-spacing: 1.92px;
-  padding-block: 60px;
+  padding-block: 64px;
 
   @include g.mq(lg) {
     font-size: 40px;

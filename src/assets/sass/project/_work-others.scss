@@ -4,7 +4,7 @@
   padding-block: 64px 100px;
 
   @include g.mq(md) {
-    padding-block: 100px 100px;
+    padding-block: 100px 200px;
   }
 }
 
@@ -21,9 +21,6 @@
     max-width: 1080px;
     margin-inline: auto;
   }
-}
-
-.p-work-others__item {
 }
 
 .p-work-others__link {
