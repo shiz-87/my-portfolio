@@ -1157,6 +1157,75 @@ body {
 	margin-right: 8px;
 }
 
+.p-work-capture {
+	background: url(../img/bg-grid-gray.png) repeat center top;
+	padding-block: 64px;
+}
+
+.p-work-capture__text {
+	font-size: 16px;
+	font-weight: 700;
+	letter-spacing: 0.64px;
+	line-height: 1;
+	text-align: center;
+}
+
+/* ▼ 外枠（デザイン担当） */
+
+.p-work-capture__frame {
+	border-radius: 20px;
+	box-shadow: 0 20px 50px rgba(0, 0, 0, 0.2);
+	height: 55vh;
+	margin-inline: auto;
+	margin-top: 32px;
+	max-height: 600px;
+	min-height: 400px;
+	overflow: hidden;
+	transform: translateZ(0);
+}
+
+.p-work-capture__scroll {
+	height: 100%;
+	overflow-y: scroll;
+	scrollbar-color: rgba(0, 0, 0, 0.2) #ffffff; /* つまみの色 背景色 */ /* ▼ Firefox対応 */
+	scrollbar-width: thin;
+	width: 100%; /* ▼ Chrome, Safari, Edge対応 */
+}
+
+.p-work-capture__scroll::-webkit-scrollbar {
+	width: 8px; /* 全体の幅 */
+}
+
+.p-work-capture__scroll { /* 背景（トラック） */
+}
+
+.p-work-capture__scroll::-webkit-scrollbar-track {
+	background: #ffffff;
+}
+
+.p-work-capture__scroll { /* 持ち手（サム） */
+}
+
+.p-work-capture__scroll::-webkit-scrollbar-thumb {
+	background-clip: content-box;
+	background-color: rgba(0, 0, 0, 0.2);
+	border: 2px solid transparent;
+	border-radius: 10px;
+}
+
+.p-work-capture__scroll { /* ホバー時は少し濃くして操作しやすく */
+}
+
+.p-work-capture__scroll::-webkit-scrollbar-thumb:hover {
+	background-color: rgba(0, 0, 0, 0.4);
+}
+
+.p-work-capture__scroll img {
+	display: block;
+	margin-inline: auto;
+	width: 100%;
+}
+
 /* ============================================
    Display (表示・非表示)
 ============================================ */
@@ -1510,6 +1579,27 @@ body {
 .p-work-point__text {
 	font-size: 16px;
 	letter-spacing: 0.64px;
+}
+
+.p-work-capture {
+	padding-block: 100px;
+}
+
+.p-work-capture__text {
+	font-size: 20px;
+	letter-spacing: 0.8px;
+}
+
+.p-work-capture__frame {
+	border-radius: 8px;
+	height: 650px;
+	margin-top: 64px;
+	max-width: 1080px;
+	width: 100%;
+}
+
+.p-work-capture__scroll img {
+	max-width: 100%;
 }
 
 .u-hidden-md {
