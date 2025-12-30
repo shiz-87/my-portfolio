@@ -6,14 +6,14 @@
 
 .c-section-title__en {
   font-family: g.$ff-en;
-  font-size: 40px;
+  font-size: 32px;
   font-weight: 700;
   line-height: 1;
   letter-spacing: 3.2px;
   display: block;
 
   @include g.mq(md) {
-    font-size: 64px;
+    font-size: 40px;
     letter-spacing: 5.12px;
   }
 }
@@ -21,14 +21,14 @@
 .c-section-title__ja {
   display: block;
   color: g.$color-text-sub;
-  font-size: 14px;
+  font-size: 13px;
   font-weight: 400;
   line-height: 1;
   letter-spacing: 1.12px;
   margin-top: 8px;
 
   @include g.mq(md) {
-    font-size: 16px;
+    font-size: 14px;
     letter-spacing: 1.28px;
     margin-top: 16px;
   }
