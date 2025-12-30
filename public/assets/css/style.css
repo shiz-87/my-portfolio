@@ -374,7 +374,7 @@ body {
 	font-size: 12px;
 	font-weight: 400;
 	letter-spacing: 0.48px;
-	line-height: 1;
+	line-height: 1.5;
 	margin-top: auto;
 }
 
@@ -1052,8 +1052,8 @@ body {
 
 .p-works-list {
 	display: grid;
-	gap: 32px; /* スマホ：1列 */
-	grid-template-columns: 1fr;
+	gap: 56px; /* スマホ：1列 */
+	grid-template-columns: 1fr; /* タブレット以上：2列 */
 }
 
 .p-work-detail {
@@ -1690,7 +1690,8 @@ body {
 }
 
 .p-works-list {
-	gap: 48px;
+	gap: 64px 40px;
+	grid-template-columns: repeat(2, 1fr);
 }
 
 .p-work-mv {
@@ -1947,11 +1948,6 @@ body {
 	font-size: 16px;
 	letter-spacing: 0.64px;
 	width: 46.2962962963%;
-}
-
-.p-works-list {
-	gap: 64px 40px;
-	grid-template-columns: repeat(2, 1fr);
 }
 
 .p-work-detail__title {
