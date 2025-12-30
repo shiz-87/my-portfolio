@@ -1,0 +1,73 @@
+@use "../global/" as g;
+
+/* ============================================
+   Page Top Button (トップへ戻るボタン)
+============================================ */
+.c-page-top {
+  /* ▼ 配置と形状 */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  width: 50px;
+  height: 50px;
+  opacity: 0; // 初期状態は非表示
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  z-index: 90;
+  transition: all 0.3s ease;
+  visibility: hidden;
+  cursor: pointer;
+
+  /* ▼ 配色 */
+  background: g.$color-accent;
+  color: g.$color-text-white;
+  border: 2px solid g.$color-accent;
+}
+
+/* SVGサイズ調整 */
+.c-page-top svg {
+  height: 28px; /* アイコンの大きさ */
+  width: 28px;
+}
+
+/* ▼ 表示状態 */
+.c-page-top.is-active {
+  opacity: 1;
+  transform: translateY(0);
+  visibility: visible;
+}
+
+/* ▼ 色反転状態（背景が赤のエリアに来た時） */
+.c-page-top.is-reverse {
+  background-color: g.$color-bg;
+  color: g.$color-accent;
+  border-color: g.$color-text-white;
+}
+
+/* ▼ ホバー時の挙動 */
+.c-page-top:hover {
+  background-color: #e03e00;
+  border-color: #e03e00;
+  color: g.$color-text-white;
+  transform: translateY(-4px);
+}
+
+/* ▼ 色反転時のホバー */
+.c-page-top.is-reverse:hover {
+  background-color: g.$color-accent;
+  border-color: g.$color-accent;
+  color: g.$color-text-white;
+}
+
+/* PC時のサイズ調整 */
+@include g.mq(md) {
+  .c-page-top {
+    bottom: 40px;
+    height: 60px;
+    right: 40px;
+    width: 60px;
+  }
+}

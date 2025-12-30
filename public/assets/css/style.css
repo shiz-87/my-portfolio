@@ -471,6 +471,73 @@ body {
 	pointer-events: none;
 }
 
+/* ============================================
+   Page Top Button (トップへ戻るボタン)
+============================================ */
+
+.c-page-top {
+	align-items: center; /* ▼ 配色 */
+	background: #ff4500;
+	border: 2px solid #ff4500;
+	border-radius: 50%;
+	bottom: 20px;
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+	color: #ffffff;
+	cursor: pointer; /* ▼ 配置と形状 */
+	display: flex;
+	height: 50px;
+	justify-content: center;
+	opacity: 0;
+	position: fixed;
+	right: 20px;
+	transition: all 0.3s ease;
+	visibility: hidden;
+	width: 50px;
+	z-index: 90;
+}
+
+/* SVGサイズ調整 */
+
+.c-page-top svg {
+	height: 28px; /* アイコンの大きさ */
+	width: 28px;
+}
+
+/* ▼ 表示状態 */
+
+.c-page-top.is-active {
+	opacity: 1;
+	transform: translateY(0);
+	visibility: visible;
+}
+
+/* ▼ 色反転状態（背景が赤のエリアに来た時） */
+
+.c-page-top.is-reverse {
+	background-color: #ffffff;
+	border-color: #ffffff;
+	color: #ff4500;
+}
+
+/* ▼ ホバー時の挙動 */
+
+.c-page-top:hover {
+	background-color: #e03e00;
+	border-color: #e03e00;
+	color: #ffffff;
+	transform: translateY(-4px);
+}
+
+/* ▼ 色反転時のホバー */
+
+.c-page-top.is-reverse:hover {
+	background-color: #ff4500;
+	border-color: #ff4500;
+	color: #ffffff;
+}
+
+/* PC時のサイズ調整 */
+
 .p-header-nav {
 	display: none;
 }
@@ -1460,6 +1527,13 @@ body {
 	height: 24px;
 	right: 32px;
 	width: 24px;
+}
+
+.c-page-top {
+	bottom: 40px;
+	height: 60px;
+	right: 40px;
+	width: 60px;
 }
 
 .p-top-mv__inner {
