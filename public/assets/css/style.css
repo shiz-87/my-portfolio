@@ -1226,6 +1226,48 @@ body {
 	width: 100%;
 }
 
+.p-work-others {
+	padding-block: 64px 100px;
+}
+
+.p-work-others__list {
+	display: grid;
+	gap: 24px 15px;
+	grid-template-columns: repeat(2, 1fr);
+	margin-top: 40px;
+}
+
+.p-work-others__link {
+	display: block;
+	transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.p-work-others__link:hover {
+	opacity: 0.7;
+	transform: translateY(-4px);
+}
+
+.p-work-others__image {
+	aspect-ratio: 16/9;
+	background-color: #f0f0f0;
+	border: 1px solid #eee;
+	border-radius: 4px;
+	overflow: hidden;
+	width: 100%;
+}
+
+.p-work-others__image img {
+	height: 100%;
+	width: 100%;
+	-o-object-fit: cover;
+	object-fit: cover;
+}
+
+.p-work-others__button {
+	margin-top: 64px;
+	text-align: center;
+}
+
 /* ============================================
    Display (表示・非表示)
 ============================================ */
@@ -1616,6 +1658,22 @@ body {
 
 .p-work-capture__scroll img {
 	max-width: 100%;
+}
+
+.p-work-others {
+	padding-block: 100px 100px;
+}
+
+.p-work-others__list {
+	gap: 40px 24px;
+	grid-template-columns: repeat(3, 1fr);
+	margin-inline: auto;
+	margin-top: 80px;
+	max-width: 1080px;
+}
+
+.p-work-others__button {
+	margin-top: 80px;
 }
 
 .u-hidden-md {
