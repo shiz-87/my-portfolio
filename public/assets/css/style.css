@@ -1268,6 +1268,48 @@ body {
 	text-align: center;
 }
 
+.p-not-found {
+	padding-block: 70px 64px;
+}
+
+.p-not-found__content {
+	margin-inline: auto;
+	max-width: 400px;
+	padding-top: 64px;
+}
+
+.p-not-found__image {
+	text-align: center;
+}
+
+.p-not-found__image img {
+	width: 100%;
+}
+
+.p-not-found__title {
+	color: #888888;
+	font-size: 24px;
+	font-weight: 700;
+	letter-spacing: 0.96px;
+	line-height: 1.5;
+	margin-top: 32px;
+	text-align: center;
+}
+
+.p-not-found__text {
+	color: #666666;
+	font-size: 14px;
+	letter-spacing: 0.56px;
+	line-height: 1.7;
+	margin-top: 24px;
+	text-align: left;
+}
+
+.p-not-found__button {
+	margin-top: 48px;
+	text-align: center;
+}
+
 /* ============================================
    Display (表示・非表示)
 ============================================ */
@@ -1674,6 +1716,31 @@ body {
 
 .p-work-others__button {
 	margin-top: 80px;
+}
+
+.p-not-found__content {
+	max-width: 1080px;
+}
+
+.p-not-found__image img {
+	max-width: 600px;
+}
+
+.p-not-found__title {
+	font-size: 40px;
+	letter-spacing: 1.6px;
+	margin-top: 64px;
+}
+
+.p-not-found__text {
+	font-size: 16px;
+	letter-spacing: 0.64px;
+	margin-top: 32px;
+	text-align: center;
+}
+
+.p-not-found__button {
+	margin-top: 64px;
 }
 
 .u-hidden-md {

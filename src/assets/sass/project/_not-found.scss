@@ -1,0 +1,68 @@
+@use "../global/" as g;
+
+.p-not-found {
+  padding-block: g.$header-height 64px;
+}
+
+.p-not-found__content {
+  padding-top: 64px;
+  max-width: 400px;
+  margin-inline: auto;
+
+  @include g.mq(md) {
+    max-width: g.$width-inner;
+  }
+}
+
+.p-not-found__image {
+  text-align: center;
+
+  img {
+    width: 100%;
+
+    @include g.mq(md) {
+      max-width: 600px;
+    }
+  }
+}
+
+.p-not-found__title {
+  color: g.$color-text-light;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.5;
+  letter-spacing: 0.96px;
+  margin-top: 32px;
+
+  @include g.mq(md) {
+    font-size: 40px;
+    letter-spacing: 1.6px;
+    margin-top: 64px;
+  }
+}
+
+.p-not-found__text {
+  text-align: left;
+  color: g.$color-text-sub;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.56px;
+  margin-top: 24px;
+
+  @include g.mq(md) {
+    text-align: center;
+    font-size: 16px;
+    letter-spacing: 0.64px;
+    margin-top: 32px;
+  }
+}
+
+.p-not-found__button {
+  margin-top: 48px;
+  text-align: center;
+
+  @include g.mq(md) {
+    margin-top: 64px;
+  }
+}
