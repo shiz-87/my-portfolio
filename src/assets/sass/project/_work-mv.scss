@@ -2,6 +2,10 @@
 
 .p-work-mv {
   padding-block: 24px 64px;
+
+  @include g.mq(md) {
+    padding-bottom: 100px;
+  }
 }
 
 .p-work-mv__image {

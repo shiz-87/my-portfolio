@@ -2,9 +2,10 @@
 
 .p-work-point {
   padding-block: 64px;
-}
 
-.p-work-point__inner {
+  @include g.mq(md) {
+    padding-block: 100px;
+  }
 }
 
 .p-work-point__list {

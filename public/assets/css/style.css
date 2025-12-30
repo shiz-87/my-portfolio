@@ -1548,6 +1548,22 @@ body {
 	gap: 48px;
 }
 
+.p-work-mv {
+	padding-bottom: 100px;
+}
+
+.p-work-overview {
+	padding-block: 100px;
+}
+
+.p-work-overview__content {
+	margin-top: 80px;
+}
+
+.p-work-point {
+	padding-block: 100px;
+}
+
 .p-work-point__list {
 	margin-top: 80px;
 }
@@ -1791,7 +1807,6 @@ body {
 }
 
 .p-work-overview__content {
-	margin-top: 80px;
 	padding: 64px;
 }
 

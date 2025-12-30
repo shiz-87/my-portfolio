@@ -2,6 +2,10 @@
 
 .p-work-overview {
   padding-block: 64px;
+
+  @include g.mq(md) {
+    padding-block: 100px;
+  }
 }
 
 .p-work-overview__content {
@@ -11,13 +15,13 @@
   padding: 32px 20px;
   margin-top: 40px;
 
-  @include g.mq(lg) {
-    padding: 64px;
+  @include g.mq(md) {
     margin-top: 80px;
   }
-}
 
-.p-work-overview__list {
+  @include g.mq(lg) {
+    padding: 64px;
+  }
 }
 
 .p-work-overview__item {
