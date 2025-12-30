@@ -1099,6 +1099,64 @@ body {
 	text-align: center;
 }
 
+.p-work-point {
+	padding-block: 64px;
+}
+
+.p-work-point__list {
+	margin-top: 40px;
+}
+
+.p-work-point__item { /* 下に線を引く */
+	border-bottom: 1px solid #eee;
+	display: flex;
+	flex-direction: column;
+	gap: 24px;
+	padding-block: 32px;
+}
+
+.p-work-point__item { /* 最初のアイテム: 上の余白を消す */
+}
+
+.p-work-point__item:first-child {
+	padding-top: 0;
+}
+
+.p-work-point__item { /* 最後のアイテム: 線と下の余白を消す */
+}
+
+.p-work-point__item:last-child {
+	border-bottom: none;
+	padding-bottom: 0;
+}
+
+.p-work-point__image {
+	margin-inline: auto;
+	max-width: 400px;
+}
+
+.p-work-point__image img {
+	width: 100%;
+}
+
+.p-work-point__title {
+	font-size: 14px;
+	font-weight: 700;
+	letter-spacing: 0.56px;
+	line-height: 1.6;
+}
+
+.p-work-point__text {
+	font-size: 14px;
+	letter-spacing: 0.56px;
+	line-height: 2;
+	margin-top: 16px;
+}
+
+.p-work-point__label {
+	margin-right: 8px;
+}
+
 /* ============================================
    Display (表示・非表示)
 ============================================ */
@@ -1419,6 +1477,39 @@ body {
 
 .p-works-list {
 	gap: 48px;
+}
+
+.p-work-point__list {
+	margin-top: 80px;
+}
+
+.p-work-point__item {
+	align-items: center;
+	flex-direction: row;
+	justify-content: space-between;
+	padding-block: 40px;
+}
+
+.p-work-point__item:nth-child(even) {
+	flex-direction: row-reverse;
+}
+
+.p-work-point__image {
+	width: 37.037037037%;
+}
+
+.p-work-point__body {
+	width: 55.5555555556%;
+}
+
+.p-work-point__title {
+	font-size: 20px;
+	letter-spacing: 0.96px;
+}
+
+.p-work-point__text {
+	font-size: 16px;
+	letter-spacing: 0.64px;
 }
 
 .u-hidden-md {

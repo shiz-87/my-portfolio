@@ -1,0 +1,97 @@
+@use "../global/" as g;
+
+.p-work-point {
+  padding-block: 64px;
+}
+
+.p-work-point__inner {
+}
+
+.p-work-point__list {
+  margin-top: 40px;
+
+  @include g.mq(md) {
+    margin-top: 80px;
+  }
+}
+
+.p-work-point__item {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding-block: 32px;
+  /* 下に線を引く */
+  border-bottom: 1px solid #eee;
+
+  @include g.mq(md) {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-block: 40px;
+  }
+
+  /* 最初のアイテム: 上の余白を消す */
+  &:first-child {
+    padding-top: 0;
+  }
+
+  /* 最後のアイテム: 線と下の余白を消す */
+  &:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+  }
+
+  // 偶数番目の要素だけ左右反転させる
+  &:nth-child(even) {
+    @include g.mq(md) {
+      flex-direction: row-reverse;
+    }
+  }
+}
+
+.p-work-point__image {
+  max-width: 400px;
+  margin-inline: auto;
+
+  @include g.mq(md) {
+    width: calc(400 / 1080 * 100%);
+  }
+
+  img {
+    width: 100%;
+  }
+}
+
+.p-work-point__body {
+  @include g.mq(md) {
+    width: calc(600 / 1080 * 100%);
+  }
+}
+
+.p-work-point__title {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.6;
+  letter-spacing: 0.56px;
+
+  @include g.mq(md) {
+    font-size: 20px;
+    letter-spacing: 0.96px;
+  }
+}
+
+.p-work-point__text {
+  font-size: 14px;
+  line-height: 2;
+  letter-spacing: 0.56px;
+  margin-top: 16px;
+
+  @include g.mq(md) {
+    font-size: 16px;
+    letter-spacing: 0.64px;
+  }
+}
+
+.p-work-point__label {
+  margin-right: 8px;
+}
