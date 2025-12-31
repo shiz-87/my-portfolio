@@ -22,7 +22,7 @@
   gap: 24px;
   padding-block: 32px;
   /* 下に線を引く */
-  border-bottom: 1px solid #eee;
+  border-bottom: 1px solid g.$color-border;
 
   @include g.mq(md) {
     flex-direction: row;

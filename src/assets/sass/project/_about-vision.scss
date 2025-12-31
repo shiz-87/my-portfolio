@@ -24,7 +24,7 @@
   display: flex;
   flex-direction: column;
   gap: 32px;
-  border-left: 3px solid #c2c2c2;
+  border-left: 3px solid g.$color-border;
   padding-left: 32px;
 
   @include g.mq(lg) {

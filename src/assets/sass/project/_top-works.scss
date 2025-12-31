@@ -52,6 +52,7 @@
 
 .p-top-works__prev {
   background: url(../img/icon-arrow-prev.svg) no-repeat center center / contain;
+  // Swiperのデフォルトスタイルを打ち消すため !important を使用
   left: 0 !important;
 }
 

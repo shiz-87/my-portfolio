@@ -935,7 +935,7 @@ body {
 }
 
 .p-about-strength__item {
-	border-bottom: 1px solid #eee;
+	border-bottom: 1px solid #eeeeee;
 	display: flex;
 	flex-direction: column;
 	gap: 16px;
@@ -988,7 +988,7 @@ body {
 }
 
 .p-about-vision__list {
-	border-left: 3px solid #c2c2c2;
+	border-left: 3px solid #eeeeee;
 	display: flex;
 	flex-direction: column;
 	gap: 32px;
@@ -1120,7 +1120,7 @@ body {
 }
 
 .p-work-overview__item { /* 下に線を引く */
-	border-bottom: 1px solid #eee;
+	border-bottom: 1px solid #eeeeee;
 	display: flex;
 	flex-direction: column;
 	gap: 16px;
@@ -1170,7 +1170,7 @@ body {
 }
 
 .p-work-point__item { /* 下に線を引く */
-	border-bottom: 1px solid #eee;
+	border-bottom: 1px solid #eeeeee;
 	display: flex;
 	flex-direction: column;
 	gap: 24px;
@@ -1311,8 +1311,8 @@ body {
 
 .p-work-others__image {
 	aspect-ratio: 16/9;
-	background-color: #f0f0f0;
-	border: 1px solid #eee;
+	background-color: #eeeeee;
+	border: 1px solid #eeeeee;
 	border-radius: 4px;
 	overflow: hidden;
 	width: 100%;

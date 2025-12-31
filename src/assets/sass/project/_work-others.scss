@@ -38,8 +38,8 @@
   aspect-ratio: 16 / 9;
   border-radius: 4px;
   overflow: hidden;
-  background-color: #f0f0f0;
-  border: 1px solid #eee;
+  background-color: g.$color-border;
+  border: 1px solid g.$color-border;
 
   img {
     width: 100%;
