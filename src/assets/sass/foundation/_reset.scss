@@ -26,7 +26,8 @@ a,
 table,
 tr,
 th,
-td {
+td,
+figure {
   margin: 0;
   padding: 0;
   border: 0;
@@ -79,8 +80,4 @@ textarea {
   font: inherit;
   color: inherit;
   vertical-align: top;
-}
-
-figure {
-  margin: 0;
 }

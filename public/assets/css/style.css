@@ -26,7 +26,8 @@ a,
 table,
 tr,
 th,
-td {
+td,
+figure {
 	border: 0;
 	font-size: 100%;
 	font-weight: normal;
@@ -79,10 +80,6 @@ textarea {
 	color: inherit;
 	font: inherit;
 	vertical-align: top;
-}
-
-figure {
-	margin: 0;
 }
 
 /**
