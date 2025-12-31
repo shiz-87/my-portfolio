@@ -1,7 +1,7 @@
 @use "../global" as g;
 
 .l-header {
-  height: 70px;
+  height: g.$header-height;
   position: fixed;
   top: 0;
   left: 0;
