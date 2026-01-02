@@ -1,0 +1,22 @@
+// 下からフワッと出すためのクラス
+.u-fade-up {
+  opacity: 0;
+  transform: translateY(30px); // 最初は少し下にずらしておく
+  transition: opacity 0.8s ease, transform 0.8s ease; // アニメーションの速度
+
+  // JSでこのクラスが付与されたら表示する
+  &.is-show {
+    opacity: 1;
+    transform: translateY(0); // 元の位置に戻す
+  }
+
+  // 0.2秒遅れて開始（左から2番目などに使用）
+  &.u-delay-200 {
+    transition-delay: 0.2s;
+  }
+
+  // 0.4秒遅れて開始（左から3番目などに使用）
+  &.u-delay-400 {
+    transition-delay: 0.4s;
+  }
+}

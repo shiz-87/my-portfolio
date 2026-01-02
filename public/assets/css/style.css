@@ -1405,6 +1405,25 @@ body {
 	font-weight: 700;
 }
 
+.u-fade-up {
+	opacity: 0;
+	transform: translateY(30px);
+	transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.u-fade-up.is-show {
+	opacity: 1;
+	transform: translateY(0);
+}
+
+.u-fade-up.u-delay-200 {
+	transition-delay: 0.2s;
+}
+
+.u-fade-up.u-delay-400 {
+	transition-delay: 0.4s;
+}
+
 @media screen and (min-width: 576px) {
 
 .p-top-mv__text {

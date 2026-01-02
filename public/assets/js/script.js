@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
   /* ============================================
-     1. ハンバーガーメニューとドロワーの制御
+    ハンバーガーメニューとドロワーの制御
   ============================================ */
   const hamburger = document.getElementById("js-hamburger");
   const drawer = document.querySelector(".p-drawer-nav");
@@ -35,7 +35,7 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   /* ============================================
-     2. Swiperの初期化（トップページ Works）
+    Swiperの初期化（トップページ Works）
   ============================================ */
   const swiperElement = document.querySelector("#js-top-works-swiper");
   if (swiperElement) {
@@ -55,7 +55,7 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   /* ============================================
-     3. ページトップボタンの制御
+    ページトップボタンの制御
   ============================================ */
   const pageTopBtn = document.querySelector("#js-page-top");
   // 色反転の基準となる要素（Contactセクション、無ければFooterを基準にする）
@@ -94,6 +94,37 @@ document.addEventListener("DOMContentLoaded", function () {
           pageTopBtn.classList.remove("is-reverse");
         }
       }
+    });
+  }
+
+  /* ============================================
+    スクロールアニメーション（要素のフェードイン）
+  ============================================ */
+  // 監視対象の要素を取得（.u-fade-upがついた要素すべて）
+  const fadeElements = document.querySelectorAll(".u-fade-up");
+
+  // IntersectionObserverのオプション設定
+  const fadeOptions = {
+    root: null, // ビューポートを基準
+    rootMargin: "0px 0px -20% 0px", // 画面の下から20%の位置に来たら発火
+    threshold: 0, // 要素が少しでも見えたら反応
+  };
+
+  // 監視機能の定義
+  const fadeObserver = new IntersectionObserver((entries, observer) => {
+    entries.forEach((entry) => {
+      // 画面内に入った場合
+      if (entry.isIntersecting) {
+        entry.target.classList.add("is-show"); // クラスを付与してCSSアニメーション開始
+        observer.unobserve(entry.target); // 一度表示したら監視をやめる（パフォーマンス負荷軽減）
+      }
+    });
+  }, fadeOptions);
+
+  // ループさせて監視を開始
+  if (fadeElements.length > 0) {
+    fadeElements.forEach((el) => {
+      fadeObserver.observe(el);
     });
   }
 });
