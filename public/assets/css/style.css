@@ -747,12 +747,11 @@ body {
 }
 
 .p-top-works__swiper {
-	padding-inline: 10px;
+	padding: 20px 10px;
 }
 
 .p-top-works__swiper-slide {
 	overflow: visible;
-	padding-bottom: 8px;
 }
 
 .p-top-works__prev,
